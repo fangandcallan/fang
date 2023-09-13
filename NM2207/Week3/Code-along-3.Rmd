@@ -1,0 +1,465 @@
+---
+title: "Week-3: Code-along"
+author: "Insert your name here"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+  df_print: paged
+pdf_document: default
+---
+
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# I. Code to edit and execute
+
+**To be submitted on canvas before attending the tutorial**
+
+
+### Loading packages
+
+```{r, eval=FALSE,echo=TRUE}
+# Load package tidyverse
+library(tidyverse)
+```
+
+### Assigning values to variables
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Example a.: execute this example
+x <- 'A'
+x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example b and execute it
+x <- 'B'
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example c and execute it
+x <- 'C'
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example d and execute it
+x <- 'D'
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example e and execute it
+x <- 'E'
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example f and execute it
+X <- 'F'
+```
+
+### Checking the type of variables
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Example a.: execute this example
+x <- 'A'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example b and execute it
+x <- 'B'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example c and execute it
+x <- 'C'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example d and execute it
+x <- 'D'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example e and execute it
+x <- 'E'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example f and execute it
+x <- 'F'
+typeof(x)
+```
+
+### Need for data types
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# import the cat-lovers data from the csv file you downloaded from canvas
+cat_lovers <- read.csv('cat-lovers.csv')
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Compute the mean of the number of cats: execute this command
+mean(cat_lovers$number_of_cats)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Get more information about the mean() command using ? operator
+?mean()
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Convert the variable number_of_cats using as.integer()
+as.integer('number_of_cats')
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Display the elements of the column number_of_cats 
+cat_lovers$number_of_cats
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Display the elements of the column number_of_cats after converting it using as.numeric()
+as.numeric(cat_lovers$number_of_cats)
+```
+
+### Create an empty vector
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Empty vector
+x <- vector()
+# Type of the empty vector
+typeof(x)
+```
+
+### Create vectors of type logical
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+x<-vector("logical",length=5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-logical(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+x<-c(TRUE,FALSE,TRUE,FALSE,TRUE)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+### Create vectors of type character
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+x<-vector("character",length=5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+x<-character(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+x<-c('TRUE','FALSE','TRUE','FALSE','TRUE')
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+### Create vectors of type integer
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+x<-vector("integer",length=5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-integer(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+x<-c(1L,2L,3L,4L,5L)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 4
+x<-seq(from=1,to=5,by=1)
+# Display the contents of x
+
+# Display the type of x
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 5
+x <- 1:5
+# Display the contents of x
+typeof(x)
+# Display the type of x
+```
+
+### Create vectors of type double
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+
+x <- numeric(0)
+typeof (x)
+
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+
+x <- c(12)
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+
+x <- vector("numeric", length = 0)
+typeof(x)
+```
+
+### Implicit coercion
+
+#### Example 1
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x <- numeric(0)
+typeof(x)
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- append(x, "pineapple")
+typeof(x)
+
+
+```
+
+#### Example 2
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- numeric(0)
+typeof(x)
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- append(x, 6)
+typeof(x)
+
+```
+
+#### Example 3
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- numeric(0)
+typeof(x)
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- append(x, TRUE)
+typeof(x)
+
+```
+
+
+#### Example 4
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- numeric(0)
+typeof(x)
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- append(x, '3')
+typeof(x)
+
+```
+
+### Explicit coercion
+
+#### Example 1
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- numeric(0)
+typeof(x)
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- as.character(x)
+typeof(x)
+
+```
+
+#### Example 2
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- '1'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+x <- as.double(x)
+typeof(x)
+
+```
+
+### Accessing elements of the vector
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x <- c(1,10,9,8,1,3,5)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access one element with index 3
+x3 <- x[3]
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements with consecutive indices, 2 to 4: 2,3,4
+x24<- x[2:4]
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements with non-consecutive indices, 1,3,5
+x135<- c(1, 3, 5)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements using logical vector
+x[c(TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE)]
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements using the conditional operator <
+xcondi<- x[x < 5]
+```
+
+### Examining vectors
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Display the length of the vector
+print(length(x))
+# Display the type of the vector
+print(typeof(x))
+# Display the structure of the vector
+print(str(x))
+```
+
+### Lists
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Initialise a named list
+my_pie = list(type="key lime", diameter=7, is.vegetarian=TRUE)
+# display the list
+my_pie
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Print the names of the list
+element_names <- names(my_pie)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve the element named type
+type_element <- my_pie[element_names == "vegetarian"]
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve a truncated list
+subset_names <- c("type", "flavor", "size")
+truncated_pie <- my_pie[subset_names]
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve the element named type
+type_element <- my_pie$type
+print(type_element)
+
+
+```
+
+#### Exploring data-sets
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Install package
+install.packages("openintro")
+# Load the package
+library(openintro)
+# Load package
+library(tidyverse)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Catch a glimpse of the data-set: see how the rows are stacked one below another
+glimpse(loans_full_schema)
+```
+
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Selecting numeric variables
+loans <- loans_full_schema %>% # <-- pipe operator
+  select(paid_total, term, interest_rate,
+         annual_income,paid_late_fees,debt_to_income)
+# View the columns stacked one below another
+glimpse(loans)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Selecting categoric variables
+loans <- loans_full_schema %>% 
+  select( ) # type the chosen columns as in the lecture slide
+# View the columns stacked one below another
+glimpse(loans)
+```
