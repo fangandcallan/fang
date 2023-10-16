@@ -1,0 +1,14 @@
+{
+  "hash": "7307f39364b7fc5ca835d25f50aff0c1",
+  "result": {
+    "markdown": "\n#CHALLANGE\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nbillboard\nbillboard %>%\n  pivot_longer(cols = starts_with(\"wk\"), \n               names_to = \"week\", \n               values_to = \"rank\", \n               values_drop_na = FALSE) %>%\n  mutate(week = parse_number(week)) %>%\n  ggplot(aes(x = week, y = rank, group = 1)) +\n  geom_line()\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ncms_patient_experience\nresult <- cms_patient_experience %>%\n  pivot_wider(\n    id_cols = starts_with(\"org\"),\n    names_from = measure_cd,\n    values_from = prf_rate\n  )\n\nresult\n```\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

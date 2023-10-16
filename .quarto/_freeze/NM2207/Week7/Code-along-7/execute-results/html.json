@@ -1,0 +1,14 @@
+{
+  "hash": "5dd17b194b3a500490ba8c3f030e956f",
+  "result": {
+    "markdown": "---\ntitle: \"Week-6: Code-along\"\nauthor: \"NM2207: Computational Media Literacy\"\ndate: \"2023-10-16\"\noutput:\n  html_document:\n  df_print: paged\npdf_document: default\n---\n\n\n\n\n# II. Code to edit and execute using the Code-along-6.Rmd file \n<br>\n\n## A. `for` loop\n<br>\n\n### 1. Simple `for` loop (Slide #6)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Enter code here\n```\n:::\n\n<br>\n\n### 2. `for` loops structure (Slide #7)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Left-hand side code: for loop for passing values\n```\n:::\n\n<br>\n\n::: {.cell}\n\n```{.r .cell-code}\n# Right-hand side code: for loop for passing indices\n```\n:::\n\n<br>\n\n### 3. Example: find sample means (Slide #9)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Enter code here\n```\n:::\n\n<br>\n\n### 4. Alternate ways to pre-allocate space (Slide #12)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Example 3 for data_type=double\n```\n:::\n\n<br>\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Initialisation of data_list\n```\n:::\n\n<br>\n\n### 5. Review: Vectorized operations (Slide #18)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Example: bad idea!\n```\n:::\n\n<br>\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Taking advantage of vectorization\n```\n:::\n\n<br>\n\n## B. Functionals\n\n### 6. `for` loops vs Functionals (Slides #23 and #24)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Slide 23\n```\n:::\n\n<br>\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Slide 24\n#Compute mean\n\n# Compute median\n\n# Compute sd\n```\n:::\n\n<br>\n\n## C. `while` loop\n\n### 7. `while` loop (Slides #27)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Left-hand side code: for loop\n```\n:::\n\n<br>\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Right-hand side code: while loop\n```\n:::\n\n<br>\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

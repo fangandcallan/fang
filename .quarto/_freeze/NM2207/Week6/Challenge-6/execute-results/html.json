@@ -1,0 +1,14 @@
+{
+  "hash": "a65463479e2e445f6039655cb635183e",
+  "result": {
+    "markdown": "---\ntitle: \"Challenge-6\"\nauthor: \"Insert your name here\"\ndate: \"2023-10-16\"\noutput: html_document\n---\n\n\n\n\n## Questions\n<br>\n\n#### Question-1: Countdown Blastoff (While Loop)\n\nCreate a program that simulates a rocket launch countdown using a while loop. Start from 10 and countdown to \"Blastoff!\" with a one-second delay between each countdown number. Print a message when the rocket launches.\n\n**Hint:** You may want to use `cat` command to print the countdown and `Sys.sleep` for incorporating the delay\n\n**Solutions:**\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Enter code here\nprintCountdown <- function(count) {\n  if (count > 0) {\n    cat(count, \"\\n\")\n    for (i in 1:1e8) {} \n    printCountdown(count - 1)\n  } else {\n    cat(\"Blastoff!\\n\")\n  }\n}\n\ncountdownValue <- 10\ncat(\"Countdown:\\n\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nCountdown:\n```\n:::\n\n```{.r .cell-code}\nprintCountdown(countdownValue)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n10 \n9 \n8 \n7 \n6 \n5 \n4 \n3 \n2 \n1 \nBlastoff!\n```\n:::\n\n```{.r .cell-code}\ncat(\"Rocket Launched!\\n\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nRocket Launched!\n```\n:::\n:::\n\n<br>\n\n#### Question-2: Word Reverser (for Loop)\n\nDevelop a program that takes a user-entered word and uses a while loop to print the word's characters in reverse order. For example, if the user enters \"hello,\" the program should print \"olleh.\"\n\n**Hint:** You may want to use `substr` command to access each character of the input word, and `paste` command to join the reversed letters one at a time\n\n**Solutions:** \n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Enter code here\nreverseWord <- function(word) {\n  reversed <- \"\"  \n  i <- nchar(word)  \n  \n  while (i > 0) {\n    char <- substr(word, i, i)  \n    reversed <- paste(reversed, char, sep = \"\")  \n    i <- i - 1  \n  }\n  \n  cat(\"Reversed word:\", reversed, \"\\n\")\n}\n\nuserInput <- readline(\"Enter a word: \")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nEnter a word: \n```\n:::\n\n```{.r .cell-code}\nreverseWord(userInput)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nReversed word:  \n```\n:::\n:::\n\n<br>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

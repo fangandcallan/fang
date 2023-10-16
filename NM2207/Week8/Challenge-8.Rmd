@@ -1,0 +1,26 @@
+#CHALLANGE
+
+```{r eval=TRUE}
+library(tidyverse)
+billboard
+billboard %>%
+  pivot_longer(cols = starts_with("wk"), 
+               names_to = "week", 
+               values_to = "rank", 
+               values_drop_na = FALSE) %>%
+  mutate(week = parse_number(week)) %>%
+  ggplot(aes(x = week, y = rank, group = 1)) +
+  geom_line()
+```
+
+```{r eval=TRUE}
+cms_patient_experience
+result <- cms_patient_experience %>%
+  pivot_wider(
+    id_cols = starts_with("org"),
+    names_from = measure_cd,
+    values_from = prf_rate
+  )
+
+result
+```
