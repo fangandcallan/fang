@@ -1,0 +1,171 @@
+---
+title: "Week-7: Code-along"
+author: "Insert your name here"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+  df_print: paged
+pdf_document: default
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# II. Code to edit and execute using the Code-along.Rmd file 
+<br>
+
+## ggplot(data = [dataset],
+mapping = aes(x = [x-variable],
+y = [y-variable])) +
+geom_xxx() +
+other options
+
+### 1. Load library and dataset.
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+library(tidyverse)
+library(palmerpenguins)
+```
+<br>
+
+### 2. Efficiently use GGPLOT
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins, #Start with the penguins data fram
+       aes(x = bill_depth_mm, # Map bill depth to the x-axi
+           y = bill_length_mm, # Map bill length to the y-axi
+           colour = species, #Map species to the colour of each point
+shape = species, #map islands to diff shapes
+size = body_mass_g, #map body mass to diff sizes
+alpha = flipper_length_mm)) + #map flipper length to diff transparency
+geom_point() #Represent each observation with a plot
+scale_colour_viridis_d()
+```
+<br>
+
+### 3. Mapping
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins) +
+aes(x = bill_depth_mm,
+y = bill_length_mm,
+size = body_mass_g,
+alpha = flipper_length_mm) +
+geom_point()
+```
+<br>
+
+### 4. Setting
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins) +
+aes(x = bill_depth_mm,
+y = bill_length_mm) +
+geom_point(size = 2, alpha = 0.5)
+```
+<br>
+
+### 5.Facte
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins) +
+aes(x = bill_depth_mm,
+y = bill_length_mm,
+color = species) +
+geom_point() +
+#1 facet_grid(species ~ island)
+#2 facet_grid(species ~ sex) [USING THIS AS EXAMPLE BELOW]
+#3 facet_grid(sex ~ specie)
+#4 facet_wrap(~ species)
+#5 facet_wrap(~ species, ncol = 2)
+#6 facet_grid(. ~ species)
+facet_grid(species ~ sex) + scale_color_viridis_d() +
+guides(color = "none")
+```
+<br>
+
+### 6. Numerical Varibles Graphs
+
+```{r, eval=TRUE,echo=TRUE}
+library(openintro)
+loans <- loans_full_schema %>%
+select(loan_amount, interest_rate, term, grade,
+state, annual_income, homeownership, debt_to_income)
+glimpse(loans)
+```
+<br>
+```{r, eval=TRUE,echo=TRUE}
+#Historgram: 
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) +
+geom_histogram(binwidth = 5000, alpha = 0.5) +
+labs(x = "Loan amount ($)",y = "Frequency",title = "Amounts of Lending Club loans")
+#{When fill w a categorical varible: facet_wrap(~ homeownership, nrow = 3)}
+
+#Density plot
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) +
+geom_density(adjust = 2, alpha = 0.5) +
+labs(x = "Loan amount ($)",y = "Density",title = "Amounts of Lending Club loans")
+
+#Box plot
+ggplot(loans, aes(x = interest_rate)) +geom_boxplot() +labs(x = "Interest rate (%)",y = NULL,
+title = "Interest rates of Lending Club loans") +
+theme( axis.ticks.y = element_blank(), axis.text.y = element_blank() )
+
+#Scatterplot
+ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
+geom_point()
+
+#Hex plot
+ggplot(loans %>% filter(debt_to_income < 100),
+aes(x = debt_to_income, y = interest_rate)) +
+geom_hex()
+```
+<br>
+
+### 7. Categoric varibles graph
+
+```{r, eval=TRUE,echo=TRUE}
+# Segmented bar plot
+ggplot(loans, aes(x = homeownership,
+fill = grade)) +
+geom_bar()
+# {or: geom_bar(position = "fill")}
+
+ggplot(loans, aes(y = homeownership, fill = grade)) + geom_bar(position = "fill") +
+labs( x = "Proportion", y = "Homeownership", fill = "Grade", title = "Grades of Lending Club loan")
+```
+<br>
+
+### 8. Setting defaults (Slide #25)
+
+```{r, eval=TRUE,echo=TRUE}
+# First define the function
+calc_sample_mean <- function(sample_size,
+our_mean=0,
+our_sd=1) {
+sample <- rnorm(sample_size,
+mean = our_mean,
+sd = our_sd)
+mean(sample)
+}
+
+# Call the function 
+calc_sample_mean(sample_size = 10)
+```
+<br>
+
+### 9. Varied varibles graph
+
+```{r, eval=TRUE,echo=TRUE}
+#Violin plots
+ggplot(loans, aes(x = homeownership, y = loan_amount)) +
+geom_violin()
+
+#Ridge plots
+library(ggridges)
+ggplot(loans, aes(x = loan_amount, y = grade, fill = grade, color = grade)) +
+geom_density_ridges(alpha = 0.5)
+```
+<br>

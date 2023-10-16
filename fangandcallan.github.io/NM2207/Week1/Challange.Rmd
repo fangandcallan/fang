@@ -1,0 +1,13 @@
+---
+title: "Challange 1"
+output:
+  html_document: default
+  pdf_document: default
+date: "2023-08-16"
+---
+
+```{r, out.height= "350px",out.width= "800px",echo=TRUE,eval=TRUE,fig.cap="Replace text here withthe caption"}
+knitr::include_graphics("1.png") 
+```
+#This is Wang Zifang, but can call me Fang
+

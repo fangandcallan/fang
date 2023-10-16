@@ -1,0 +1,114 @@
+---
+title: "Week-6: Code-along"
+author: "NM2207: Computational Media Literacy"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+  df_print: paged
+pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# II. Code to edit and execute using the Code-along-6.Rmd file 
+<br>
+
+## A. `for` loop
+<br>
+
+### 1. Simple `for` loop (Slide #6)
+
+```{r, eval=FALSE,echo=TRUE}
+# Enter code here
+
+```
+<br>
+
+### 2. `for` loops structure (Slide #7)
+
+```{r, eval=FALSE,echo=TRUE}
+# Left-hand side code: for loop for passing values
+
+```
+<br>
+```{r, eval=FALSE,echo=TRUE}
+# Right-hand side code: for loop for passing indices
+
+```
+<br>
+
+### 3. Example: find sample means (Slide #9)
+
+```{r, eval=FALSE,echo=TRUE}
+# Enter code here
+
+```
+<br>
+
+### 4. Alternate ways to pre-allocate space (Slide #12)
+
+```{r, eval=FALSE,echo=TRUE}
+# Example 3 for data_type=double
+
+```
+<br>
+
+```{r, eval=FALSE,echo=TRUE}
+# Initialisation of data_list
+
+```
+<br>
+
+### 5. Review: Vectorized operations (Slide #18)
+
+```{r, eval=FALSE,echo=TRUE}
+# Example: bad idea!
+
+```
+<br>
+
+```{r, eval=FALSE,echo=TRUE}
+# Taking advantage of vectorization
+
+```
+<br>
+
+## B. Functionals
+
+### 6. `for` loops vs Functionals (Slides #23 and #24)
+
+```{r, eval=FALSE,echo=TRUE}
+# Slide 23
+
+```
+<br>
+
+```{r, eval=FALSE,echo=TRUE}
+# Slide 24
+#Compute mean
+
+# Compute median
+
+# Compute sd
+```
+<br>
+
+## C. `while` loop
+
+### 7. `while` loop (Slides #27)
+
+```{r, eval=FALSE,echo=TRUE}
+# Left-hand side code: for loop
+
+```
+<br>
+
+```{r, eval=FALSE,echo=TRUE}
+# Right-hand side code: while loop
+
+```
+<br>
+
+

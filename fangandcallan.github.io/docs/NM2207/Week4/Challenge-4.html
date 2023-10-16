@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Insert your name here">
+<meta name="dcterms.date" content="2023-10-16">
+
+<title>fangandcallan.github.io - Challenge-4</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">fangandcallan.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Challenge-4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Insert your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 16, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 25px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<p><br></p>
+<p>Load the “comm_data.csv” dataset using the <code>read_csv()</code> command and assign it to a variable named “comm_data.”</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>comm_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"comm_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<section id="question-1-communication-chronicles" class="level4">
+<h4 class="anchored" data-anchor-id="question-1-communication-chronicles">Question-1: Communication Chronicles</h4>
+<p>Using the select command, create a new dataframe containing only the “date,” “channel,” and “message” columns from the “comm_data” dataset.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>selected_data1 <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date, channel, message)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-2-channel-selection" class="level4">
+<h4 class="anchored" data-anchor-id="question-2-channel-selection">Question-2: Channel Selection</h4>
+<p>Use the filter command to create a new dataframe that includes messages sent through the “Twitter” channel on August 2nd.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>selected_data2 <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(channel <span class="sc">==</span> <span class="st">"Twitter"</span>, date <span class="sc">==</span> <span class="fu">as.Date</span>(<span class="st">"2023-08-02"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-3-chronological-order" class="level4">
+<h4 class="anchored" data-anchor-id="question-3-chronological-order">Question-3: Chronological Order</h4>
+<p>Utilizing the arrange command, arrange the “comm_data” dataframe in ascending order based on the “date” column.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="ot">&lt;-</span> <span class="fu">arrange</span>(comm_data, date)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-4-distinct-discovery" class="level4">
+<h4 class="anchored" data-anchor-id="question-4-distinct-discovery">Question-4: Distinct Discovery</h4>
+<p>Apply the distinct command to find the unique senders in the “comm_data” dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>unique_senders <span class="ot">&lt;-</span> <span class="fu">distinct</span>(comm_data, sender)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-5-sender-stats" class="level4">
+<h4 class="anchored" data-anchor-id="question-5-sender-stats">Question-5: Sender Stats</h4>
+<p>Employ the count and group_by commands to generate a summary table that shows the count of messages sent by each sender in the “comm_data” dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>summary_table1 <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sender) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">message_count =</span> <span class="fu">n</span>())</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>summary_table1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+  sender        message_count
+  &lt;chr&gt;                 &lt;int&gt;
+1 @bob_tweets             179
+2 @erin_tweets            171
+3 @frank_chat             174
+4 alice@example           180
+5 carol_slack             141
+6 dave@example            155</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="question-6-channel-chatter-insights" class="level4">
+<h4 class="anchored" data-anchor-id="question-6-channel-chatter-insights">Question-6: Channel Chatter Insights</h4>
+<p>Using the group_by and count commands, create a summary table that displays the count of messages sent through each communication channel in the “comm_data” dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>summary_table2 <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(channel) <span class="sc">%&gt;%</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>summary_table2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+# Groups:   channel [3]
+  channel     n
+  &lt;chr&gt;   &lt;int&gt;
+1 Email     331
+2 Slack     320
+3 Twitter   349</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="question-7-positive-pioneers" class="level4">
+<h4 class="anchored" data-anchor-id="question-7-positive-pioneers">Question-7: Positive Pioneers</h4>
+<p>Utilize the filter, select, and arrange commands to identify the top three senders with the highest average positive sentiment scores. Display their usernames and corresponding sentiment averages.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>filtered_data <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(sentiment <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>summary_table <span class="ot">&lt;-</span> filtered_data <span class="sc">%&gt;%</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sender) <span class="sc">%&gt;%</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_sentiment =</span> <span class="fu">mean</span>(sentiment))</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>sorted_summary_table <span class="ot">&lt;-</span> summary_table <span class="sc">%&gt;%</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_sentiment))</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>top_three_senders <span class="ot">&lt;-</span> sorted_summary_table <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">3</span>)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(top_three_senders, sender, avg_sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  sender        avg_sentiment
+  &lt;chr&gt;                 &lt;dbl&gt;
+1 dave@example          0.541
+2 @frank_chat           0.528
+3 alice@example         0.493</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="question-8-message-mood-over-time" class="level4">
+<h4 class="anchored" data-anchor-id="question-8-message-mood-over-time">Question-8: Message Mood Over Time</h4>
+<p>With the group_by, summarise, and arrange commands, calculate the average sentiment score for each day in the “comm_data” dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>summary_table <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date) <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_sentiment =</span> <span class="fu">mean</span>(sentiment))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>sorted_summary_table <span class="ot">&lt;-</span> summary_table <span class="sc">%&gt;%</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(date)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-9-selective-sentiments" class="level4">
+<h4 class="anchored" data-anchor-id="question-9-selective-sentiments">Question-9: Selective Sentiments</h4>
+<p>Use the filter and select commands to extract messages with a negative sentiment score (less than 0) and create a new dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>negative_sentiment_data <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(sentiment <span class="sc">&lt;</span> <span class="dv">0</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>negative_sentiment_data <span class="ot">&lt;-</span> negative_sentiment_data <span class="sc">%&gt;%</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date, sender, message)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-10-enhancing-engagement" class="level4">
+<h4 class="anchored" data-anchor-id="question-10-enhancing-engagement">Question-10: Enhancing Engagement</h4>
+<p>Apply the mutate command to add a new column to the “comm_data” dataframe, representing a sentiment label: “Positive,” “Neutral,” or “Negative,” based on the sentiment score.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>comm_data <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sentiment_label =</span> <span class="fu">ifelse</span>(sentiment <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"Positive"</span>,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>             <span class="fu">ifelse</span>(sentiment <span class="sc">==</span> <span class="dv">0</span>, <span class="st">"Neutral"</span>, <span class="st">"Negative"</span>)))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>comm_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           date channel        sender         message    sentiment
+1    2023-08-11 Twitter  dave@example    Fun weekend!  0.824099663
+2    2023-08-11   Email   @bob_tweets Hello everyone!  0.662486946
+3    2023-08-11   Slack   @frank_chat Hello everyone! -0.143450806
+4    2023-08-18   Email   @frank_chat    Fun weekend!  0.380196611
+5    2023-08-14   Slack   @frank_chat Need assistance  0.187954018
+6    2023-08-04   Email  @erin_tweets Need assistance -0.108376242
+7    2023-08-10 Twitter   @frank_chat Hello everyone! -0.740855453
+8    2023-08-04   Slack alice@example Hello everyone! -0.187917918
+9    2023-08-20   Email  dave@example    Team meeting  0.617879979
+10   2023-08-09   Slack  @erin_tweets Hello everyone! -0.932525445
+11   2023-08-06   Email   @frank_chat    Team meeting  0.819675826
+12   2023-08-16 Twitter  @erin_tweets     Great work!  0.150156671
+13   2023-08-01 Twitter alice@example Need assistance  0.676776995
+14   2023-08-16   Slack alice@example  Exciting news!  0.320830711
+15   2023-08-16 Twitter alice@example  Exciting news!  0.927110374
+16   2023-08-07   Email   @bob_tweets     Great work!  0.642848774
+17   2023-08-01 Twitter   @bob_tweets Need assistance  0.148395223
+18   2023-08-20   Email   carol_slack    Team meeting  0.909817838
+19   2023-08-08   Slack  @erin_tweets Need assistance -0.879413284
+20   2023-08-06   Slack  dave@example Hello everyone!  0.968081689
+21   2023-08-11 Twitter   @bob_tweets     Great work! -0.751736611
+22   2023-08-12 Twitter  dave@example    Team meeting -0.786887704
+23   2023-08-12   Slack   @frank_chat    Fun weekend!  0.519153008
+24   2023-08-11   Email   @frank_chat    Fun weekend!  0.874191639
+25   2023-08-04   Email   @bob_tweets    Fun weekend! -0.539049788
+26   2023-08-13   Email alice@example Hello everyone!  0.433930994
+27   2023-08-16 Twitter   @bob_tweets  Exciting news! -0.141741692
+28   2023-08-09 Twitter alice@example Need assistance  0.083300223
+29   2023-08-14 Twitter  dave@example     Great work!  0.866824818
+30   2023-08-17 Twitter alice@example    Team meeting -0.189370414
+31   2023-08-17 Twitter   @bob_tweets Need assistance -0.493062959
+32   2023-08-15   Email   @bob_tweets     Great work!  0.468266435
+33   2023-08-01 Twitter   @frank_chat Need assistance  0.599045397
+34   2023-08-16 Twitter alice@example     Great work! -0.179680133
+35   2023-08-10 Twitter  @erin_tweets     Great work!  0.199771451
+36   2023-08-07   Email  dave@example    Team meeting  0.327507946
+37   2023-08-02   Email  dave@example     Great work!  0.973676749
+38   2023-08-13   Email   @bob_tweets    Team meeting -0.092784007
+39   2023-08-11   Slack   @bob_tweets    Team meeting -0.955364774
+40   2023-08-05   Email   carol_slack  Exciting news!  0.468174768
+41   2023-08-19 Twitter   @frank_chat Need assistance  0.481529109
+42   2023-08-10   Slack  @erin_tweets Need assistance -0.766245456
+43   2023-08-11   Email   carol_slack Need assistance -0.547700667
+44   2023-08-06 Twitter  @erin_tweets  Exciting news! -0.415566467
+45   2023-08-06   Email   carol_slack     Great work! -0.579760317
+46   2023-08-18   Email alice@example    Fun weekend!  0.233402089
+47   2023-08-07   Email   @frank_chat    Fun weekend!  0.387379609
+48   2023-08-20   Email alice@example     Great work!  0.062977130
+49   2023-08-16   Slack  @erin_tweets  Exciting news! -0.290788232
+50   2023-08-02 Twitter alice@example    Team meeting  0.210089974
+51   2023-08-12   Email  dave@example Need assistance  0.091942075
+52   2023-08-10 Twitter  @erin_tweets Need assistance -0.340010146
+53   2023-08-13   Slack   carol_slack Hello everyone!  0.675182751
+54   2023-08-13   Slack   @bob_tweets     Great work! -0.443448592
+55   2023-08-16   Slack   @bob_tweets    Team meeting -0.774452816
+56   2023-08-13   Slack alice@example     Great work!  0.480868685
+57   2023-08-07   Slack   @frank_chat Need assistance  0.914976185
+58   2023-08-13 Twitter  dave@example    Fun weekend!  0.986894567
+59   2023-08-06 Twitter alice@example Hello everyone! -0.882707532
+60   2023-08-15   Slack  @erin_tweets Hello everyone! -0.689319659
+61   2023-08-17   Email   @frank_chat    Team meeting  0.932789830
+62   2023-08-12   Slack   @frank_chat Hello everyone! -0.219064676
+63   2023-08-18 Twitter   @frank_chat    Team meeting -0.004460444
+64   2023-08-20 Twitter alice@example Hello everyone!  0.482187657
+65   2023-08-14 Twitter   @frank_chat    Team meeting -0.935610580
+66   2023-08-03   Email  @erin_tweets    Fun weekend!  0.924321534
+67   2023-08-06   Slack   @bob_tweets Hello everyone! -0.452905738
+68   2023-08-14 Twitter alice@example  Exciting news!  0.415267176
+69   2023-08-16   Email   @frank_chat Hello everyone!  0.997601895
+70   2023-08-13 Twitter alice@example Need assistance  0.119616441
+71   2023-08-13   Email  dave@example Need assistance -0.834047724
+72   2023-08-05   Slack  @erin_tweets Need assistance -0.195926677
+73   2023-08-12   Slack  dave@example    Fun weekend! -0.285561244
+74   2023-08-16   Slack   carol_slack Hello everyone!  0.529127310
+75   2023-08-10   Email   @bob_tweets    Team meeting -0.060755176
+76   2023-08-12 Twitter   carol_slack     Great work!  0.407506729
+77   2023-08-18   Email   @frank_chat    Fun weekend! -0.569811309
+78   2023-08-17   Email   @bob_tweets    Fun weekend!  0.825692308
+79   2023-08-09   Email  @erin_tweets  Exciting news! -0.018193701
+80   2023-08-10   Email   @bob_tweets     Great work!  0.924440826
+81   2023-08-04 Twitter   @bob_tweets    Fun weekend!  0.185009266
+82   2023-08-19   Email  dave@example  Exciting news!  0.821827833
+83   2023-08-04   Slack alice@example Need assistance  0.534302738
+84   2023-08-17   Slack alice@example  Exciting news! -0.301641050
+85   2023-08-15 Twitter  @erin_tweets     Great work! -0.244326655
+86   2023-08-15 Twitter   carol_slack Hello everyone! -0.761104998
+87   2023-08-03 Twitter   @bob_tweets  Exciting news! -0.408464086
+88   2023-08-16   Email   @frank_chat    Fun weekend! -0.584208118
+89   2023-08-04   Slack   @bob_tweets    Fun weekend!  0.866016825
+90   2023-08-15 Twitter alice@example    Team meeting -0.178657859
+91   2023-08-07   Email alice@example     Great work! -0.329095908
+92   2023-08-15 Twitter alice@example    Fun weekend! -0.707901944
+93   2023-08-20   Email alice@example Hello everyone! -0.166448134
+94   2023-08-19   Email  dave@example  Exciting news! -0.533024813
+95   2023-08-07   Slack   @bob_tweets Need assistance -0.356371285
+96   2023-08-17   Email   @bob_tweets    Team meeting -0.467768930
+97   2023-08-09 Twitter   carol_slack    Fun weekend! -0.056202481
+98   2023-08-19   Email  @erin_tweets    Team meeting -0.757670477
+99   2023-08-16 Twitter  @erin_tweets  Exciting news! -0.265161676
+100  2023-08-01 Twitter   @frank_chat  Exciting news! -0.822780307
+101  2023-08-10   Email   @frank_chat Hello everyone!  0.535708998
+102  2023-08-17 Twitter   @bob_tweets  Exciting news!  0.953910344
+103  2023-08-14   Email  @erin_tweets     Great work!  0.891589128
+104  2023-08-08   Email   @bob_tweets Need assistance  0.115187556
+105  2023-08-03 Twitter  @erin_tweets Need assistance -0.680233249
+106  2023-08-14 Twitter  @erin_tweets Hello everyone! -0.647561021
+107  2023-08-20   Email   @bob_tweets  Exciting news!  0.931368547
+108  2023-08-13 Twitter   @bob_tweets     Great work! -0.705626460
+109  2023-08-06   Slack   @frank_chat Hello everyone! -0.050532605
+110  2023-08-20   Slack alice@example     Great work! -0.459148118
+111  2023-08-20   Slack  dave@example  Exciting news!  0.617734990
+112  2023-08-11   Email alice@example    Fun weekend! -0.034278538
+113  2023-08-09 Twitter alice@example     Great work! -0.013945965
+114  2023-08-10   Slack  dave@example    Team meeting -0.934943126
+115  2023-08-16   Slack alice@example Need assistance  0.669039086
+116  2023-08-02   Slack  @erin_tweets    Fun weekend! -0.474169046
+117  2023-08-14   Email   @bob_tweets    Team meeting -0.815906889
+118  2023-08-07   Slack   @frank_chat  Exciting news!  0.993148146
+119  2023-08-04   Email alice@example  Exciting news! -0.200843529
+120  2023-08-13 Twitter alice@example    Fun weekend! -0.958858334
+121  2023-08-08   Email   carol_slack    Team meeting  0.213498762
+122  2023-08-18   Slack   @bob_tweets    Fun weekend! -0.558302570
+123  2023-08-12 Twitter   carol_slack Need assistance -0.435741366
+124  2023-08-18   Email  dave@example Need assistance -0.770186925
+125  2023-08-11   Slack   @frank_chat  Exciting news! -0.871460078
+126  2023-08-18 Twitter   @bob_tweets Need assistance  0.083397951
+127  2023-08-11   Slack  dave@example Hello everyone! -0.843954970
+128  2023-08-15   Email  @erin_tweets    Fun weekend! -0.576360519
+129  2023-08-09 Twitter alice@example     Great work!  0.432502551
+130  2023-08-11 Twitter  @erin_tweets Need assistance -0.462980804
+131  2023-08-15   Email   carol_slack  Exciting news! -0.745493084
+132  2023-08-15 Twitter  dave@example    Fun weekend!  0.469535301
+133  2023-08-02 Twitter  @erin_tweets  Exciting news!  0.750492542
+134  2023-08-16   Email alice@example    Team meeting  0.858062949
+135  2023-08-07   Email alice@example  Exciting news!  0.773558143
+136  2023-08-19   Email alice@example  Exciting news!  0.401543677
+137  2023-08-17 Twitter   @frank_chat Hello everyone!  0.951721462
+138  2023-08-20 Twitter alice@example  Exciting news!  0.310656996
+139  2023-08-20 Twitter   carol_slack     Great work!  0.544291852
+140  2023-08-10   Slack   @bob_tweets Hello everyone! -0.075317414
+141  2023-08-04   Email  @erin_tweets Need assistance  0.689327837
+142  2023-08-15 Twitter   @bob_tweets    Team meeting  0.853966497
+143  2023-08-10   Email alice@example Need assistance -0.815106571
+144  2023-08-03 Twitter alice@example Hello everyone!  0.530733542
+145  2023-08-19   Slack  dave@example     Great work! -0.526421044
+146  2023-08-12 Twitter  dave@example Hello everyone!  0.278570379
+147  2023-08-01   Slack   @frank_chat    Team meeting -0.202094683
+148  2023-08-11   Email  dave@example     Great work!  0.509797142
+149  2023-08-17 Twitter   carol_slack    Fun weekend!  0.172285239
+150  2023-08-01   Slack   @bob_tweets  Exciting news!  0.146396939
+151  2023-08-07 Twitter   @bob_tweets    Fun weekend! -0.390309056
+152  2023-08-20   Slack   @bob_tweets     Great work!  0.203791809
+153  2023-08-12   Slack   carol_slack     Great work! -0.733910211
+154  2023-08-17   Email  @erin_tweets     Great work!  0.709753431
+155  2023-08-10 Twitter  @erin_tweets    Fun weekend! -0.496555788
+156  2023-08-14 Twitter alice@example Hello everyone! -0.892831107
+157  2023-08-11   Slack   @frank_chat Hello everyone! -0.108963726
+158  2023-08-11   Slack alice@example    Fun weekend! -0.799520459
+159  2023-08-03 Twitter   carol_slack  Exciting news!  0.044649603
+160  2023-08-18   Email   @bob_tweets    Fun weekend! -0.558283084
+161  2023-08-12 Twitter   @bob_tweets  Exciting news! -0.608554570
+162  2023-08-17   Email  dave@example    Fun weekend!  0.420022254
+163  2023-08-16   Slack alice@example Need assistance  0.445466304
+164  2023-08-01   Slack  @erin_tweets     Great work!  0.244422906
+165  2023-08-01 Twitter   @frank_chat    Team meeting -0.526283488
+166  2023-08-04 Twitter  dave@example Need assistance -0.635092593
+167  2023-08-07   Email  @erin_tweets     Great work! -0.446627778
+168  2023-08-06 Twitter   @bob_tweets    Fun weekend! -0.149422837
+169  2023-08-15   Slack alice@example    Fun weekend!  0.271711212
+170  2023-08-13 Twitter alice@example Hello everyone!  0.752351641
+171  2023-08-05 Twitter alice@example     Great work! -0.630844017
+172  2023-08-10   Slack   @frank_chat Hello everyone!  0.142070077
+173  2023-08-16 Twitter   @bob_tweets    Fun weekend! -0.533522750
+174  2023-08-06   Email   @bob_tweets    Fun weekend!  0.201027735
+175  2023-08-13   Slack   @frank_chat  Exciting news!  0.443950114
+176  2023-08-01 Twitter   @frank_chat  Exciting news! -0.398672424
+177  2023-08-07   Slack alice@example  Exciting news! -0.686074989
+178  2023-08-13   Slack  @erin_tweets Need assistance -0.514785561
+179  2023-08-18 Twitter   @frank_chat  Exciting news! -0.445320373
+180  2023-08-14 Twitter alice@example     Great work!  0.346799491
+181  2023-08-06 Twitter  dave@example  Exciting news! -0.433124611
+182  2023-08-13 Twitter   @frank_chat Hello everyone! -0.369747002
+183  2023-08-07   Email alice@example Hello everyone!  0.917979236
+184  2023-08-14 Twitter   @frank_chat     Great work! -0.912142744
+185  2023-08-09   Email  @erin_tweets  Exciting news!  0.020394353
+186  2023-08-15   Slack   carol_slack    Fun weekend! -0.760701751
+187  2023-08-09   Slack   @bob_tweets    Team meeting  0.500293179
+188  2023-08-03 Twitter   @bob_tweets Hello everyone! -0.243440011
+189  2023-08-16   Slack   @bob_tweets    Team meeting  0.120248223
+190  2023-08-06   Email   @bob_tweets    Fun weekend! -0.159573650
+191  2023-08-07   Email   carol_slack  Exciting news!  0.785684678
+192  2023-08-12   Email  @erin_tweets  Exciting news! -0.260005387
+193  2023-08-13   Slack   carol_slack  Exciting news!  0.474910577
+194  2023-08-01   Slack   @frank_chat Need assistance  0.601800072
+195  2023-08-07   Slack alice@example Need assistance  0.877496709
+196  2023-08-10   Slack alice@example Need assistance -0.356432681
+197  2023-08-18 Twitter  dave@example Need assistance -0.577738499
+198  2023-08-07   Email   @bob_tweets    Team meeting -0.767587414
+199  2023-08-12   Slack alice@example    Fun weekend!  0.226010282
+200  2023-08-14   Slack  @erin_tweets Hello everyone!  0.987832270
+201  2023-08-06   Slack   @frank_chat Need assistance  0.746888391
+202  2023-08-14 Twitter alice@example    Team meeting  0.024089097
+203  2023-08-07 Twitter  dave@example    Team meeting -0.014527882
+204  2023-08-02   Slack  @erin_tweets  Exciting news!  0.900116188
+205  2023-08-09 Twitter alice@example    Fun weekend! -0.391704335
+206  2023-08-07   Slack  @erin_tweets Hello everyone!  0.079340591
+207  2023-08-16   Email   carol_slack     Great work!  0.306993762
+208  2023-08-10   Email   @frank_chat Need assistance -0.857863282
+209  2023-08-09   Slack  @erin_tweets    Fun weekend!  0.542777083
+210  2023-08-03   Email  dave@example Hello everyone!  0.575844854
+211  2023-08-03 Twitter  dave@example    Team meeting -0.024207670
+212  2023-08-05 Twitter   @bob_tweets Need assistance  0.089429019
+213  2023-08-19   Slack   @bob_tweets Hello everyone!  0.679174718
+214  2023-08-03   Email  @erin_tweets    Team meeting  0.100578078
+215  2023-08-04   Slack   @frank_chat Need assistance  0.691338675
+216  2023-08-07   Slack   @bob_tweets Need assistance -0.611560303
+217  2023-08-11   Slack   @bob_tweets Need assistance -0.542398809
+218  2023-08-05   Slack   @bob_tweets Hello everyone! -0.940684421
+219  2023-08-20   Slack alice@example  Exciting news!  0.685212519
+220  2023-08-14   Email  @erin_tweets Need assistance  0.867801995
+221  2023-08-20 Twitter  @erin_tweets     Great work! -0.404516522
+222  2023-08-20   Slack  dave@example  Exciting news! -0.476039052
+223  2023-08-16 Twitter  dave@example     Great work!  0.827052074
+224  2023-08-16   Email   carol_slack     Great work! -0.045373839
+225  2023-08-11   Slack   carol_slack  Exciting news!  0.062969209
+226  2023-08-12   Email   @bob_tweets Need assistance -0.042491458
+227  2023-08-18   Email alice@example Hello everyone! -0.024430894
+228  2023-08-03 Twitter   @bob_tweets Need assistance  0.115823371
+229  2023-08-20   Email   @bob_tweets Need assistance -0.299717092
+230  2023-08-19   Slack   @bob_tweets Hello everyone! -0.558468956
+231  2023-08-19 Twitter   @bob_tweets     Great work!  0.521462946
+232  2023-08-05   Slack   @bob_tweets    Team meeting -0.386754569
+233  2023-08-08 Twitter   @frank_chat Hello everyone! -0.081353148
+234  2023-08-16 Twitter  dave@example Need assistance -0.194268964
+235  2023-08-07   Slack   carol_slack Hello everyone!  0.973429719
+236  2023-08-03 Twitter   carol_slack     Great work!  0.646422371
+237  2023-08-11   Email  dave@example    Team meeting  0.146319367
+238  2023-08-01   Slack   carol_slack Hello everyone!  0.802523659
+239  2023-08-08   Email   carol_slack    Fun weekend!  0.670605208
+240  2023-08-16   Email   @frank_chat  Exciting news!  0.305391626
+241  2023-08-06   Slack   @bob_tweets    Fun weekend! -0.927836751
+242  2023-08-14   Slack  @erin_tweets     Great work! -0.518683678
+243  2023-08-05   Email  @erin_tweets  Exciting news!  0.549038415
+244  2023-08-13   Email   carol_slack  Exciting news!  0.991050147
+245  2023-08-18   Email  @erin_tweets Need assistance -0.240649289
+246  2023-08-20 Twitter  @erin_tweets     Great work! -0.743658878
+247  2023-08-11 Twitter   @frank_chat    Team meeting  0.629940747
+248  2023-08-18   Email   carol_slack    Team meeting  0.343653605
+249  2023-08-01   Slack  dave@example    Team meeting -0.176315426
+250  2023-08-05   Slack   carol_slack    Team meeting -0.320228465
+251  2023-08-08   Email  dave@example Need assistance  0.084778340
+252  2023-08-19   Email  dave@example  Exciting news!  0.324592507
+253  2023-08-15   Slack   @frank_chat  Exciting news! -0.582243779
+254  2023-08-18   Email   @bob_tweets  Exciting news!  0.497974098
+255  2023-08-14   Slack   @frank_chat Need assistance -0.384110797
+256  2023-08-10   Slack alice@example     Great work!  0.804542714
+257  2023-08-10   Slack  @erin_tweets    Team meeting  0.862134462
+258  2023-08-11 Twitter  dave@example  Exciting news!  0.018387399
+259  2023-08-15   Email   carol_slack Need assistance  0.414960733
+260  2023-08-20 Twitter   @frank_chat    Team meeting  0.659773430
+261  2023-08-12 Twitter alice@example Hello everyone!  0.532433989
+262  2023-08-20   Slack alice@example  Exciting news! -0.415822029
+263  2023-08-18 Twitter   @frank_chat  Exciting news!  0.784590872
+264  2023-08-14 Twitter   @bob_tweets     Great work! -0.970631612
+265  2023-08-02 Twitter  dave@example  Exciting news!  0.817105632
+266  2023-08-19   Email  @erin_tweets    Team meeting -0.823923888
+267  2023-08-02 Twitter  @erin_tweets  Exciting news!  0.581556937
+268  2023-08-05 Twitter   carol_slack    Fun weekend!  0.706561523
+269  2023-08-12   Slack   @frank_chat Need assistance -0.611636332
+270  2023-08-08   Slack   carol_slack  Exciting news! -0.388513986
+271  2023-08-19   Slack  @erin_tweets     Great work!  0.037533612
+272  2023-08-01   Email   carol_slack    Fun weekend!  0.757286296
+273  2023-08-04   Slack   carol_slack    Fun weekend! -0.049394990
+274  2023-08-03 Twitter   carol_slack     Great work!  0.049291416
+275  2023-08-16   Slack   @frank_chat    Team meeting -0.143542713
+276  2023-08-06 Twitter   carol_slack    Team meeting -0.385177557
+277  2023-08-06   Email  dave@example Need assistance -0.438415068
+278  2023-08-06 Twitter   @bob_tweets    Team meeting -0.549432104
+279  2023-08-14   Email   carol_slack    Fun weekend!  0.446355308
+280  2023-08-04   Email alice@example     Great work! -0.769964864
+281  2023-08-05   Slack  @erin_tweets Need assistance  0.519475343
+282  2023-08-06   Slack alice@example    Fun weekend! -0.103599444
+283  2023-08-04   Email   @frank_chat Need assistance  0.063336529
+284  2023-08-15   Slack   @bob_tweets  Exciting news!  0.423514269
+285  2023-08-16   Slack   carol_slack Hello everyone! -0.321912185
+286  2023-08-03   Slack alice@example     Great work! -0.150377708
+287  2023-08-18   Slack  @erin_tweets    Team meeting  0.353438236
+288  2023-08-03 Twitter  dave@example Hello everyone!  0.902683333
+289  2023-08-20 Twitter alice@example    Fun weekend!  0.280627117
+290  2023-08-15 Twitter   @frank_chat Need assistance -0.639425840
+291  2023-08-05 Twitter alice@example    Team meeting  0.824948560
+292  2023-08-09   Slack  @erin_tweets    Team meeting  0.268132484
+293  2023-08-04   Email   @bob_tweets Need assistance  0.017915569
+294  2023-08-18 Twitter   carol_slack  Exciting news!  0.222249684
+295  2023-08-20   Email   @bob_tweets    Team meeting -0.801527123
+296  2023-08-12 Twitter  dave@example     Great work!  0.195303030
+297  2023-08-14 Twitter  dave@example    Fun weekend!  0.474564350
+298  2023-08-20   Slack  @erin_tweets    Team meeting -0.134665603
+299  2023-08-20   Email   carol_slack    Team meeting  0.078007510
+300  2023-08-02 Twitter  @erin_tweets  Exciting news! -0.525143623
+301  2023-08-09   Slack alice@example Need assistance  0.665302936
+302  2023-08-17 Twitter  @erin_tweets    Fun weekend! -0.417790642
+303  2023-08-08   Slack  @erin_tweets     Great work! -0.410223121
+304  2023-08-05   Slack  @erin_tweets  Exciting news! -0.302134784
+305  2023-08-19   Email  dave@example    Team meeting  0.087382621
+306  2023-08-19   Slack alice@example    Team meeting -0.249497572
+307  2023-08-03   Slack  dave@example     Great work! -0.488912587
+308  2023-08-15   Slack   @bob_tweets    Team meeting -0.271451744
+309  2023-08-10 Twitter  @erin_tweets    Team meeting  0.384202328
+310  2023-08-06   Email   carol_slack     Great work!  0.766328182
+311  2023-08-08   Email alice@example  Exciting news! -0.007040349
+312  2023-08-07   Slack   @bob_tweets  Exciting news!  0.370947586
+313  2023-08-03 Twitter alice@example Hello everyone! -0.893453151
+314  2023-08-01   Email   @frank_chat    Team meeting -0.670432338
+315  2023-08-18   Email alice@example  Exciting news!  0.422912350
+316  2023-08-03   Email   @frank_chat Need assistance -0.345415825
+317  2023-08-04   Slack  dave@example    Fun weekend! -0.848228461
+318  2023-08-15   Email   @frank_chat Need assistance  0.385732211
+319  2023-08-06   Slack alice@example    Fun weekend! -0.143456620
+320  2023-08-11   Slack  dave@example Hello everyone!  0.879992486
+321  2023-08-05 Twitter   carol_slack    Team meeting  0.364639959
+322  2023-08-20   Slack  dave@example     Great work!  0.814900840
+323  2023-08-20   Email  @erin_tweets  Exciting news! -0.195798854
+324  2023-08-09   Slack  dave@example    Fun weekend! -0.358376735
+325  2023-08-13   Email   carol_slack  Exciting news! -0.930242309
+326  2023-08-20   Slack  @erin_tweets    Fun weekend!  0.604609676
+327  2023-08-15   Email  @erin_tweets Hello everyone! -0.598425182
+328  2023-08-16   Slack  dave@example  Exciting news!  0.461496073
+329  2023-08-02 Twitter alice@example    Team meeting  0.964958043
+330  2023-08-16 Twitter   carol_slack  Exciting news! -0.875286373
+331  2023-08-19   Email   @frank_chat Hello everyone!  0.179850068
+332  2023-08-14   Slack  @erin_tweets  Exciting news!  0.336964048
+333  2023-08-07   Slack  @erin_tweets     Great work! -0.643276188
+334  2023-08-01 Twitter   @bob_tweets  Exciting news! -0.452694423
+335  2023-08-11 Twitter   @bob_tweets  Exciting news!  0.260118117
+336  2023-08-18   Slack   @bob_tweets Need assistance -0.754348847
+337  2023-08-14   Email  dave@example Need assistance -0.829999507
+338  2023-08-14   Email alice@example Need assistance  0.043240849
+339  2023-08-01   Slack   carol_slack    Fun weekend! -0.877705400
+340  2023-08-12 Twitter   @bob_tweets    Team meeting  0.265132846
+341  2023-08-04   Slack alice@example    Team meeting -0.111247493
+342  2023-08-05   Email   carol_slack    Fun weekend!  0.451752027
+343  2023-08-04   Email   @frank_chat     Great work! -0.317266905
+344  2023-08-08 Twitter alice@example Hello everyone!  0.223401716
+345  2023-08-07 Twitter  dave@example  Exciting news!  0.466239469
+346  2023-08-14   Slack  dave@example Hello everyone!  0.491653796
+347  2023-08-04 Twitter   @bob_tweets    Fun weekend!  0.163814227
+348  2023-08-04   Email  @erin_tweets    Fun weekend! -0.415885320
+349  2023-08-18   Slack  @erin_tweets  Exciting news! -0.537696546
+350  2023-08-01   Email   carol_slack Need assistance -0.130674560
+351  2023-08-10   Slack   @bob_tweets Need assistance  0.279333149
+352  2023-08-16 Twitter   carol_slack Need assistance -0.375053814
+353  2023-08-18   Email   carol_slack  Exciting news! -0.978982675
+354  2023-08-14   Email  @erin_tweets Need assistance -0.220039924
+355  2023-08-14   Email alice@example Need assistance  0.041204039
+356  2023-08-20 Twitter   @bob_tweets    Fun weekend!  0.236553716
+357  2023-08-08   Email alice@example     Great work!  0.222402995
+358  2023-08-19   Email alice@example     Great work!  0.301563812
+359  2023-08-17   Email  dave@example Hello everyone!  0.976894801
+360  2023-08-07   Slack   carol_slack    Team meeting  0.190247875
+361  2023-08-07 Twitter   carol_slack Need assistance  0.895823483
+362  2023-08-01   Slack  dave@example    Team meeting  0.093826082
+363  2023-08-17   Slack alice@example     Great work!  0.652192219
+364  2023-08-04   Slack   carol_slack Need assistance  0.088740259
+365  2023-08-08   Slack   @bob_tweets Hello everyone!  0.740663246
+366  2023-08-17 Twitter  dave@example    Fun weekend!  0.775130778
+367  2023-08-11 Twitter  dave@example    Fun weekend!  0.124404418
+368  2023-08-19   Slack   @bob_tweets Hello everyone!  0.487545231
+369  2023-08-18 Twitter  dave@example Need assistance -0.613432584
+370  2023-08-17   Email   @frank_chat     Great work! -0.951084716
+371  2023-08-10   Email  @erin_tweets  Exciting news!  0.679597112
+372  2023-08-12   Email alice@example    Team meeting  0.774573303
+373  2023-08-02   Email  dave@example  Exciting news!  0.717076284
+374  2023-08-18   Email   @frank_chat    Fun weekend!  0.061621126
+375  2023-08-14   Slack   @frank_chat Need assistance -0.920249034
+376  2023-08-08 Twitter   @frank_chat    Fun weekend!  0.484796492
+377  2023-08-18 Twitter  dave@example  Exciting news! -0.209318373
+378  2023-08-17 Twitter   carol_slack Need assistance -0.806338225
+379  2023-08-12   Email   @bob_tweets  Exciting news! -0.597888714
+380  2023-08-04   Email alice@example  Exciting news!  0.308247630
+381  2023-08-04 Twitter   @bob_tweets  Exciting news! -0.122806889
+382  2023-08-17 Twitter  @erin_tweets Hello everyone!  0.299843722
+383  2023-08-10 Twitter  @erin_tweets  Exciting news!  0.275836162
+384  2023-08-10 Twitter   @frank_chat    Team meeting -0.976236885
+385  2023-08-16   Email alice@example  Exciting news! -0.858994203
+386  2023-08-12   Slack   carol_slack    Fun weekend!  0.608656868
+387  2023-08-11 Twitter   @frank_chat    Fun weekend! -0.926554946
+388  2023-08-12   Email  dave@example    Fun weekend!  0.043927317
+389  2023-08-15 Twitter  dave@example     Great work!  0.435108419
+390  2023-08-18   Slack  dave@example    Team meeting -0.718652172
+391  2023-08-08   Slack   @frank_chat Need assistance  0.963640937
+392  2023-08-07 Twitter   carol_slack     Great work!  0.805481421
+393  2023-08-16   Email  @erin_tweets    Fun weekend! -0.928850479
+394  2023-08-14   Slack  dave@example  Exciting news! -0.298691060
+395  2023-08-02   Slack alice@example    Fun weekend!  0.823352248
+396  2023-08-03   Email  @erin_tweets     Great work! -0.900102365
+397  2023-08-19 Twitter   @frank_chat    Fun weekend! -0.371842024
+398  2023-08-18 Twitter  dave@example    Team meeting -0.012694929
+399  2023-08-12 Twitter  @erin_tweets    Team meeting  0.650313874
+400  2023-08-02   Email  dave@example    Fun weekend! -0.357268680
+401  2023-08-14   Slack  @erin_tweets Need assistance  0.141076977
+402  2023-08-15 Twitter   @bob_tweets Need assistance  0.373691486
+403  2023-08-11   Slack  dave@example Need assistance  0.930096855
+404  2023-08-18   Slack  dave@example    Fun weekend! -0.566594298
+405  2023-08-19 Twitter  dave@example    Team meeting -0.284638313
+406  2023-08-19   Email   carol_slack    Fun weekend!  0.892766985
+407  2023-08-07   Email   @bob_tweets    Team meeting -0.150205611
+408  2023-08-05   Email   @bob_tweets Hello everyone!  0.616259416
+409  2023-08-10   Email   @frank_chat     Great work!  0.533465849
+410  2023-08-02 Twitter  dave@example     Great work!  0.516138048
+411  2023-08-18 Twitter  @erin_tweets Need assistance  0.116931847
+412  2023-08-15   Slack   carol_slack Need assistance  0.674294885
+413  2023-08-06   Email   @frank_chat  Exciting news!  0.696377364
+414  2023-08-20   Email  dave@example    Team meeting  0.985037738
+415  2023-08-10   Slack  @erin_tweets Need assistance -0.904224418
+416  2023-08-11   Email alice@example  Exciting news! -0.901918261
+417  2023-08-14   Slack  @erin_tweets    Fun weekend! -0.259928443
+418  2023-08-20   Slack   carol_slack  Exciting news!  0.221250645
+419  2023-08-13 Twitter alice@example    Team meeting  0.892404643
+420  2023-08-06   Slack alice@example     Great work! -0.545365768
+421  2023-08-12   Email   @frank_chat Need assistance -0.104900640
+422  2023-08-20 Twitter  dave@example    Fun weekend! -0.818538250
+423  2023-08-20 Twitter  @erin_tweets     Great work! -0.349391197
+424  2023-08-02   Email  dave@example  Exciting news! -0.212464974
+425  2023-08-19 Twitter   carol_slack    Team meeting  0.317846402
+426  2023-08-09   Slack alice@example    Fun weekend!  0.690391378
+427  2023-08-11   Email   @bob_tweets Hello everyone!  0.576369455
+428  2023-08-14 Twitter  @erin_tweets Need assistance -0.543064435
+429  2023-08-09   Slack  dave@example    Fun weekend!  0.229193896
+430  2023-08-16 Twitter  dave@example    Fun weekend! -0.286604216
+431  2023-08-05 Twitter   @bob_tweets Hello everyone! -0.038818533
+432  2023-08-01 Twitter   @frank_chat     Great work!  0.473425272
+433  2023-08-10 Twitter   @bob_tweets    Fun weekend!  0.346377916
+434  2023-08-04   Slack   @frank_chat Need assistance  0.933738099
+435  2023-08-20   Email   carol_slack     Great work!  0.680826971
+436  2023-08-20   Slack   carol_slack     Great work! -0.574539005
+437  2023-08-10   Slack  dave@example  Exciting news! -0.762122771
+438  2023-08-12   Email  dave@example     Great work!  0.480317921
+439  2023-08-09   Email  @erin_tweets    Team meeting -0.956999032
+440  2023-08-07   Slack alice@example    Fun weekend!  0.397376804
+441  2023-08-04   Email   @frank_chat     Great work!  0.263225980
+442  2023-08-06   Email   @frank_chat    Fun weekend!  0.791513952
+443  2023-08-08   Email   @frank_chat  Exciting news! -0.050068120
+444  2023-08-07 Twitter   carol_slack Hello everyone! -0.355751095
+445  2023-08-09 Twitter alice@example Hello everyone!  0.184942272
+446  2023-08-14 Twitter  @erin_tweets     Great work!  0.468599080
+447  2023-08-14 Twitter alice@example  Exciting news!  0.157755047
+448  2023-08-10   Email alice@example     Great work!  0.693037350
+449  2023-08-16   Email alice@example     Great work!  0.360768258
+450  2023-08-10 Twitter   @frank_chat     Great work!  0.214199054
+451  2023-08-08   Email  dave@example Need assistance -0.998774239
+452  2023-08-10   Email   carol_slack    Team meeting -0.970338997
+453  2023-08-08 Twitter   carol_slack    Fun weekend!  0.232626481
+454  2023-08-11   Slack   @bob_tweets  Exciting news! -0.033773244
+455  2023-08-20 Twitter   @frank_chat    Team meeting -0.476500273
+456  2023-08-17   Email  @erin_tweets    Team meeting  0.863822790
+457  2023-08-18   Slack  @erin_tweets  Exciting news! -0.719712700
+458  2023-08-13 Twitter   @bob_tweets Need assistance  0.408644735
+459  2023-08-11 Twitter   carol_slack     Great work!  0.910158344
+460  2023-08-06 Twitter  dave@example Need assistance -0.064178423
+461  2023-08-03 Twitter alice@example Hello everyone! -0.567197050
+462  2023-08-15   Slack  dave@example Hello everyone! -0.510870771
+463  2023-08-13   Email  @erin_tweets Hello everyone! -0.939573104
+464  2023-08-16   Email  dave@example Need assistance -0.014521594
+465  2023-08-16   Email   @frank_chat    Team meeting -0.287118956
+466  2023-08-05   Email   carol_slack Need assistance  0.558824511
+467  2023-08-16   Email   @frank_chat Need assistance  0.343977793
+468  2023-08-15   Email  dave@example Hello everyone!  0.282330315
+469  2023-08-06 Twitter   @bob_tweets Hello everyone!  0.116596443
+470  2023-08-13 Twitter   @frank_chat  Exciting news!  0.368110256
+471  2023-08-10 Twitter alice@example     Great work!  0.266619468
+472  2023-08-18 Twitter   @bob_tweets  Exciting news!  0.290797958
+473  2023-08-20 Twitter  @erin_tweets    Team meeting  0.341763970
+474  2023-08-13 Twitter   @bob_tweets Need assistance -0.883181106
+475  2023-08-20   Slack alice@example Hello everyone! -0.863882122
+476  2023-08-04 Twitter  dave@example    Fun weekend!  0.463157478
+477  2023-08-05   Email   @frank_chat  Exciting news!  0.567230823
+478  2023-08-17 Twitter alice@example     Great work! -0.641657173
+479  2023-08-08   Email  @erin_tweets  Exciting news! -0.847681918
+480  2023-08-05   Email   @frank_chat    Team meeting -0.094959955
+481  2023-08-08 Twitter   @bob_tweets    Team meeting -0.024243061
+482  2023-08-18   Email  @erin_tweets Need assistance  0.171319252
+483  2023-08-17   Slack   carol_slack Need assistance -0.750471560
+484  2023-08-07   Email  dave@example Hello everyone! -0.526591262
+485  2023-08-16 Twitter  @erin_tweets Hello everyone!  0.806540163
+486  2023-08-05   Email   carol_slack Need assistance  0.300882405
+487  2023-08-03 Twitter  @erin_tweets    Fun weekend! -0.345988781
+488  2023-08-02   Email alice@example     Great work! -0.784876938
+489  2023-08-13   Slack   carol_slack     Great work! -0.947211589
+490  2023-08-09   Email  @erin_tweets    Fun weekend!  0.513564137
+491  2023-08-04   Email   @bob_tweets    Team meeting -0.235653992
+492  2023-08-04   Email alice@example Hello everyone!  0.161035733
+493  2023-08-16   Email   @frank_chat    Fun weekend!  0.402509230
+494  2023-08-13 Twitter   @frank_chat Hello everyone! -0.426096413
+495  2023-08-04 Twitter   @bob_tweets Hello everyone! -0.774547359
+496  2023-08-16 Twitter  @erin_tweets    Team meeting -0.674190784
+497  2023-08-11   Slack   @frank_chat Need assistance  0.235724795
+498  2023-08-15   Slack   @frank_chat Hello everyone!  0.058449768
+499  2023-08-20   Email   @frank_chat    Team meeting -0.993759494
+500  2023-08-06   Slack  dave@example    Team meeting -0.536957865
+501  2023-08-05 Twitter  dave@example    Team meeting  0.779166287
+502  2023-08-07   Slack alice@example    Team meeting  0.569526526
+503  2023-08-06   Email  @erin_tweets Need assistance  0.664381829
+504  2023-08-07   Slack  dave@example Need assistance -0.718395420
+505  2023-08-09 Twitter   @bob_tweets    Team meeting  0.526457346
+506  2023-08-06   Email   @bob_tweets     Great work! -0.400677142
+507  2023-08-17 Twitter   @frank_chat    Team meeting -0.232014328
+508  2023-08-15 Twitter alice@example  Exciting news!  0.153143482
+509  2023-08-01 Twitter   @bob_tweets Hello everyone! -0.918783627
+510  2023-08-09   Email   @bob_tweets    Fun weekend! -0.375794835
+511  2023-08-05 Twitter  dave@example    Fun weekend! -0.021554315
+512  2023-08-10   Slack  @erin_tweets Need assistance  0.086844633
+513  2023-08-16   Slack  dave@example Need assistance  0.484403751
+514  2023-08-07   Email   @bob_tweets    Team meeting -0.423585835
+515  2023-08-07   Email  dave@example  Exciting news! -0.184577833
+516  2023-08-18   Email  dave@example Hello everyone!  0.978220029
+517  2023-08-17 Twitter   @frank_chat    Fun weekend! -0.624432764
+518  2023-08-15 Twitter   carol_slack    Team meeting  0.498292263
+519  2023-08-13 Twitter   carol_slack  Exciting news!  0.771407587
+520  2023-08-12   Email  dave@example    Fun weekend!  0.650773503
+521  2023-08-19 Twitter alice@example Need assistance  0.143810244
+522  2023-08-19 Twitter  @erin_tweets    Team meeting  0.945942261
+523  2023-08-12   Slack  dave@example  Exciting news!  0.563268560
+524  2023-08-17   Email  dave@example    Fun weekend! -0.173903828
+525  2023-08-07   Email   @frank_chat    Team meeting  0.192018484
+526  2023-08-16   Email   carol_slack Hello everyone! -0.029610693
+527  2023-08-08   Email alice@example  Exciting news!  0.723251828
+528  2023-08-07   Email   @bob_tweets  Exciting news! -0.616928389
+529  2023-08-01 Twitter  @erin_tweets Hello everyone!  0.524320859
+530  2023-08-07   Email  dave@example     Great work! -0.359934055
+531  2023-08-11   Slack   @frank_chat     Great work!  0.431652104
+532  2023-08-04 Twitter   carol_slack  Exciting news! -0.615862965
+533  2023-08-11   Email  @erin_tweets     Great work! -0.049498704
+534  2023-08-19 Twitter alice@example    Fun weekend! -0.111042333
+535  2023-08-03   Email   carol_slack Need assistance  0.247236022
+536  2023-08-09   Email  @erin_tweets    Fun weekend!  0.237909144
+537  2023-08-19   Email   @frank_chat    Team meeting -0.943049938
+538  2023-08-08   Email   @frank_chat     Great work!  0.362224979
+539  2023-08-14   Slack  dave@example     Great work!  0.538406652
+540  2023-08-19   Email  dave@example     Great work! -0.336303487
+541  2023-08-12   Slack alice@example Need assistance  0.454688824
+542  2023-08-11   Slack   @frank_chat    Team meeting -0.642315470
+543  2023-08-14 Twitter   @bob_tweets  Exciting news!  0.754322437
+544  2023-08-10   Slack alice@example Need assistance -0.236316590
+545  2023-08-19   Email  @erin_tweets    Fun weekend!  0.149510738
+546  2023-08-09 Twitter alice@example Hello everyone!  0.762754925
+547  2023-08-14 Twitter   @bob_tweets Hello everyone!  0.250149151
+548  2023-08-08   Email   @bob_tweets Need assistance -0.249764988
+549  2023-08-04   Slack   @bob_tweets Hello everyone! -0.161284721
+550  2023-08-05 Twitter alice@example    Team meeting  0.082249742
+551  2023-08-13 Twitter  @erin_tweets     Great work! -0.956337988
+552  2023-08-15   Email   @frank_chat     Great work!  0.120376800
+553  2023-08-08 Twitter   @frank_chat    Fun weekend! -0.673607849
+554  2023-08-15   Slack  @erin_tweets    Team meeting  0.457860831
+555  2023-08-08   Email  @erin_tweets Need assistance -0.775436828
+556  2023-08-10   Slack  dave@example  Exciting news!  0.532747218
+557  2023-08-18   Slack   @frank_chat    Team meeting -0.134102609
+558  2023-08-20 Twitter alice@example    Fun weekend! -0.436848105
+559  2023-08-18   Email alice@example Need assistance  0.275121063
+560  2023-08-12   Email  @erin_tweets Need assistance  0.866607873
+561  2023-08-10   Slack   @bob_tweets  Exciting news!  0.027252671
+562  2023-08-07   Slack  dave@example  Exciting news! -0.823877914
+563  2023-08-19 Twitter alice@example    Team meeting -0.299451457
+564  2023-08-20 Twitter  dave@example  Exciting news! -0.542942689
+565  2023-08-04   Slack  dave@example    Fun weekend!  0.796501584
+566  2023-08-20   Slack   @bob_tweets    Team meeting -0.118006961
+567  2023-08-04   Email  @erin_tweets Need assistance -0.070094255
+568  2023-08-18 Twitter   @bob_tweets    Fun weekend!  0.590919483
+569  2023-08-01 Twitter  dave@example Hello everyone!  0.530999278
+570  2023-08-17 Twitter alice@example Hello everyone!  0.582868762
+571  2023-08-12   Slack   carol_slack Need assistance -0.919222645
+572  2023-08-18 Twitter   @frank_chat    Team meeting  0.818109252
+573  2023-08-10   Email   @bob_tweets  Exciting news!  0.664575256
+574  2023-08-18   Email  dave@example  Exciting news! -0.768564025
+575  2023-08-20   Slack   carol_slack     Great work! -0.595158034
+576  2023-08-06   Slack alice@example Need assistance  0.037042340
+577  2023-08-14 Twitter  dave@example    Fun weekend! -0.064443091
+578  2023-08-13   Email  @erin_tweets    Fun weekend!  0.496487776
+579  2023-08-14 Twitter   @frank_chat    Team meeting  0.499737595
+580  2023-08-17 Twitter alice@example Hello everyone! -0.605858998
+581  2023-08-03   Email   @frank_chat Hello everyone!  0.488557915
+582  2023-08-07 Twitter   @frank_chat     Great work! -0.823533585
+583  2023-08-15 Twitter   @frank_chat Hello everyone!  0.384222084
+584  2023-08-15   Email alice@example    Team meeting  0.176413531
+585  2023-08-10   Email   @frank_chat Hello everyone!  0.051583528
+586  2023-08-02   Slack alice@example    Fun weekend! -0.485003887
+587  2023-08-01   Slack  @erin_tweets    Team meeting  0.031597136
+588  2023-08-15   Email   @frank_chat Need assistance -0.438784983
+589  2023-08-09   Email   @bob_tweets Hello everyone!  0.703965933
+590  2023-08-16   Slack  dave@example    Fun weekend!  0.438361928
+591  2023-08-14   Email   @bob_tweets Hello everyone!  0.498191035
+592  2023-08-04 Twitter  dave@example    Fun weekend! -0.495438306
+593  2023-08-20   Slack   @frank_chat     Great work!  0.606102686
+594  2023-08-07   Email   @frank_chat Hello everyone! -0.143556185
+595  2023-08-02 Twitter   carol_slack Hello everyone!  0.450987421
+596  2023-08-05   Slack   carol_slack     Great work!  0.470731148
+597  2023-08-07   Email  dave@example    Fun weekend! -0.735883705
+598  2023-08-15   Slack   @frank_chat     Great work!  0.960373470
+599  2023-08-19   Email   @bob_tweets    Team meeting  0.855612874
+600  2023-08-02   Slack   @bob_tweets  Exciting news!  0.365244868
+601  2023-08-01   Slack   @bob_tweets  Exciting news! -0.024743940
+602  2023-08-01   Email   @frank_chat    Fun weekend! -0.797102704
+603  2023-08-07 Twitter alice@example    Team meeting -0.365139902
+604  2023-08-15   Email alice@example Need assistance -0.264464825
+605  2023-08-08   Slack  @erin_tweets Need assistance -0.461871512
+606  2023-08-18 Twitter   carol_slack Need assistance -0.107154121
+607  2023-08-17   Email   @frank_chat    Team meeting -0.229243480
+608  2023-08-17 Twitter  dave@example Need assistance -0.035525655
+609  2023-08-10   Email   @bob_tweets    Team meeting  0.253805156
+610  2023-08-15 Twitter   @frank_chat Need assistance  0.344264537
+611  2023-08-12 Twitter   @bob_tweets     Great work! -0.405934577
+612  2023-08-13 Twitter  @erin_tweets     Great work!  0.515643027
+613  2023-08-17 Twitter  @erin_tweets Hello everyone! -0.606922586
+614  2023-08-02 Twitter   carol_slack Hello everyone!  0.173851238
+615  2023-08-10   Slack   @frank_chat  Exciting news!  0.769946682
+616  2023-08-06   Email  @erin_tweets Hello everyone! -0.172054263
+617  2023-08-04   Email   carol_slack Need assistance  0.188933107
+618  2023-08-06   Email  dave@example Hello everyone! -0.987261285
+619  2023-08-03 Twitter alice@example Need assistance  0.747163485
+620  2023-08-14 Twitter   @frank_chat    Fun weekend! -0.672147054
+621  2023-08-09 Twitter alice@example  Exciting news! -0.792284821
+622  2023-08-12   Email alice@example  Exciting news!  0.063475272
+623  2023-08-13 Twitter alice@example     Great work! -0.026141260
+624  2023-08-05   Email  @erin_tweets     Great work!  0.830162693
+625  2023-08-15   Email   carol_slack    Fun weekend! -0.141636565
+626  2023-08-12 Twitter  @erin_tweets    Fun weekend!  0.038330505
+627  2023-08-04 Twitter alice@example    Fun weekend! -0.693275109
+628  2023-08-05   Slack   @bob_tweets Need assistance  0.291605130
+629  2023-08-19 Twitter  dave@example Need assistance -0.115035673
+630  2023-08-02 Twitter   carol_slack Need assistance  0.215954025
+631  2023-08-08   Email alice@example     Great work! -0.068923920
+632  2023-08-10 Twitter   @frank_chat    Team meeting -0.289186294
+633  2023-08-10 Twitter   carol_slack  Exciting news!  0.030849482
+634  2023-08-15 Twitter  dave@example    Fun weekend!  0.345517721
+635  2023-08-14   Email   @bob_tweets Need assistance  0.330107941
+636  2023-08-13   Email alice@example Hello everyone!  0.042741961
+637  2023-08-06   Slack   carol_slack  Exciting news! -0.633368273
+638  2023-08-19   Slack  @erin_tweets     Great work! -0.725357866
+639  2023-08-03   Slack  @erin_tweets    Team meeting -0.812502595
+640  2023-08-08 Twitter   @bob_tweets     Great work!  0.564973874
+641  2023-08-13 Twitter  dave@example    Fun weekend! -0.042934414
+642  2023-08-17   Slack   carol_slack    Fun weekend!  0.169502832
+643  2023-08-12   Email alice@example     Great work!  0.383860287
+644  2023-08-06   Slack   @bob_tweets    Fun weekend! -0.895003283
+645  2023-08-06 Twitter  dave@example    Fun weekend!  0.005671109
+646  2023-08-08   Email   @frank_chat Need assistance -0.992002849
+647  2023-08-06   Email  @erin_tweets Hello everyone!  0.905330024
+648  2023-08-16   Email   @frank_chat    Fun weekend! -0.552409418
+649  2023-08-07   Slack  @erin_tweets    Team meeting -0.780283807
+650  2023-08-14   Email  @erin_tweets    Fun weekend! -0.835450725
+651  2023-08-08 Twitter alice@example     Great work! -0.236779108
+652  2023-08-09 Twitter  dave@example     Great work! -0.495721815
+653  2023-08-01 Twitter   carol_slack     Great work!  0.406890230
+654  2023-08-08 Twitter alice@example    Team meeting  0.870818266
+655  2023-08-14   Email  dave@example    Fun weekend!  0.304697359
+656  2023-08-03   Slack   @frank_chat  Exciting news!  0.591279314
+657  2023-08-15   Slack   @frank_chat    Fun weekend!  0.816346027
+658  2023-08-14   Email  @erin_tweets Hello everyone! -0.446434771
+659  2023-08-05   Email alice@example    Fun weekend!  0.347548683
+660  2023-08-18   Slack   @bob_tweets    Fun weekend!  0.567603516
+661  2023-08-19 Twitter   @frank_chat  Exciting news!  0.388266448
+662  2023-08-15 Twitter   @bob_tweets    Team meeting -0.144443278
+663  2023-08-01   Email   @bob_tweets Hello everyone!  0.902623749
+664  2023-08-13 Twitter   @frank_chat    Team meeting -0.877922161
+665  2023-08-06   Slack alice@example Hello everyone!  0.710270591
+666  2023-08-09   Email   @bob_tweets Hello everyone! -0.725457437
+667  2023-08-07   Email   @bob_tweets    Team meeting -0.232356975
+668  2023-08-05 Twitter  dave@example     Great work!  0.245927144
+669  2023-08-02 Twitter   @frank_chat Need assistance -0.115179492
+670  2023-08-08   Slack alice@example Hello everyone! -0.812013249
+671  2023-08-02   Slack   carol_slack Hello everyone!  0.805289558
+672  2023-08-10   Email   @frank_chat    Team meeting -0.320194449
+673  2023-08-14   Slack   @bob_tweets Hello everyone!  0.450289166
+674  2023-08-18   Email   carol_slack  Exciting news! -0.546088908
+675  2023-08-14 Twitter   @bob_tweets     Great work! -0.018533767
+676  2023-08-03   Slack   carol_slack     Great work! -0.777630202
+677  2023-08-04   Email   @bob_tweets    Fun weekend!  0.419715998
+678  2023-08-11 Twitter  @erin_tweets    Team meeting -0.351081788
+679  2023-08-04 Twitter  @erin_tweets Hello everyone! -0.217646003
+680  2023-08-10   Slack alice@example    Team meeting  0.425960287
+681  2023-08-11   Slack   @frank_chat    Team meeting -0.203160496
+682  2023-08-13   Slack alice@example Need assistance -0.100954488
+683  2023-08-13   Slack   carol_slack Need assistance  0.886342321
+684  2023-08-18   Email   carol_slack Need assistance  0.121493359
+685  2023-08-09   Slack   carol_slack Hello everyone!  0.902016178
+686  2023-08-02 Twitter alice@example Need assistance  0.157653404
+687  2023-08-13   Slack alice@example    Team meeting -0.493501368
+688  2023-08-09   Email  dave@example    Team meeting  0.746085706
+689  2023-08-12 Twitter alice@example  Exciting news! -0.487793705
+690  2023-08-06   Email   carol_slack Hello everyone!  0.076276061
+691  2023-08-08 Twitter alice@example    Fun weekend! -0.329790550
+692  2023-08-10 Twitter   @frank_chat  Exciting news! -0.149807401
+693  2023-08-15 Twitter  @erin_tweets Need assistance  0.599532404
+694  2023-08-03   Email   @frank_chat     Great work! -0.022698464
+695  2023-08-05   Email  @erin_tweets  Exciting news! -0.283369262
+696  2023-08-16   Slack   @frank_chat    Team meeting -0.933677876
+697  2023-08-16   Slack   @frank_chat Hello everyone! -0.878399170
+698  2023-08-11   Slack   @bob_tweets     Great work!  0.041871845
+699  2023-08-07   Slack   @bob_tweets     Great work! -0.311243319
+700  2023-08-12   Email   @frank_chat  Exciting news!  0.777389107
+701  2023-08-01   Slack   @frank_chat Hello everyone! -0.572465386
+702  2023-08-09   Email   @frank_chat    Fun weekend! -0.372473280
+703  2023-08-12 Twitter  dave@example Need assistance -0.713639749
+704  2023-08-12   Slack   carol_slack     Great work!  0.874556832
+705  2023-08-17   Slack   @frank_chat     Great work! -0.700269639
+706  2023-08-13   Email   @frank_chat Need assistance  0.935812009
+707  2023-08-08   Slack   carol_slack  Exciting news!  0.055117640
+708  2023-08-10   Slack   @bob_tweets    Fun weekend!  0.957983019
+709  2023-08-09   Slack alice@example  Exciting news! -0.539138246
+710  2023-08-05 Twitter alice@example  Exciting news!  0.722319741
+711  2023-08-15 Twitter  @erin_tweets Hello everyone!  0.768580468
+712  2023-08-14   Slack   @frank_chat  Exciting news! -0.054910814
+713  2023-08-05 Twitter  dave@example     Great work!  0.544805384
+714  2023-08-02 Twitter   carol_slack  Exciting news! -0.693217811
+715  2023-08-18   Slack   @bob_tweets Hello everyone! -0.164491392
+716  2023-08-08   Email  @erin_tweets    Fun weekend!  0.378708432
+717  2023-08-12   Email   @frank_chat Need assistance  0.544408341
+718  2023-08-09 Twitter   @bob_tweets  Exciting news!  0.605349668
+719  2023-08-16 Twitter alice@example  Exciting news!  0.696509592
+720  2023-08-13 Twitter   @frank_chat Hello everyone! -0.694118693
+721  2023-08-08   Email  @erin_tweets    Fun weekend!  0.734125260
+722  2023-08-03   Email   @frank_chat     Great work! -0.222633559
+723  2023-08-14   Email alice@example     Great work! -0.111933967
+724  2023-08-06   Email   @bob_tweets     Great work! -0.417041691
+725  2023-08-12   Email  dave@example     Great work! -0.841218561
+726  2023-08-03   Slack  @erin_tweets Need assistance -0.173975688
+727  2023-08-12   Email   @frank_chat    Fun weekend! -0.102208237
+728  2023-08-15   Email  dave@example Need assistance  0.773382573
+729  2023-08-14   Slack  @erin_tweets Hello everyone!  0.605556316
+730  2023-08-20   Email alice@example    Fun weekend!  0.851679420
+731  2023-08-07   Email   @bob_tweets  Exciting news!  0.244900235
+732  2023-08-10 Twitter  dave@example     Great work! -0.505026447
+733  2023-08-13   Slack  @erin_tweets Need assistance -0.544543609
+734  2023-08-12   Slack   @bob_tweets    Fun weekend!  0.990166281
+735  2023-08-20   Email   @frank_chat    Team meeting  0.560076173
+736  2023-08-09   Slack   carol_slack Hello everyone! -0.289897254
+737  2023-08-03   Email alice@example Hello everyone!  0.713812393
+738  2023-08-08 Twitter  @erin_tweets    Fun weekend!  0.191519982
+739  2023-08-13   Slack   carol_slack     Great work!  0.460303653
+740  2023-08-10   Slack  @erin_tweets Need assistance  0.037588875
+741  2023-08-05 Twitter   carol_slack Hello everyone!  0.130742100
+742  2023-08-15   Email   @bob_tweets    Team meeting -0.801572199
+743  2023-08-14   Slack  @erin_tweets  Exciting news! -0.736287751
+744  2023-08-18   Slack   @bob_tweets    Team meeting  0.403409261
+745  2023-08-07   Slack alice@example     Great work!  0.580541194
+746  2023-08-13   Email  dave@example     Great work!  0.550955762
+747  2023-08-11 Twitter   @frank_chat    Team meeting -0.303564250
+748  2023-08-14   Email   carol_slack  Exciting news!  0.596924395
+749  2023-08-02 Twitter   @bob_tweets Need assistance -0.281915764
+750  2023-08-19 Twitter   carol_slack    Team meeting  0.578111817
+751  2023-08-14 Twitter  dave@example Need assistance -0.273263505
+752  2023-08-13   Email   @frank_chat     Great work! -0.693289580
+753  2023-08-18   Slack  @erin_tweets Hello everyone! -0.395961934
+754  2023-08-15 Twitter  @erin_tweets Need assistance  0.787741330
+755  2023-08-01 Twitter   @frank_chat Need assistance -0.970480603
+756  2023-08-03   Slack alice@example    Fun weekend!  0.542070733
+757  2023-08-07   Slack   @bob_tweets Need assistance  0.251102221
+758  2023-08-01   Slack   @frank_chat    Team meeting -0.113114946
+759  2023-08-08   Email alice@example Hello everyone! -0.666331347
+760  2023-08-01   Email   @bob_tweets    Team meeting  0.783531986
+761  2023-08-05   Slack  dave@example     Great work!  0.018169560
+762  2023-08-02   Email   @frank_chat    Fun weekend!  0.129630754
+763  2023-08-08   Slack  @erin_tweets    Team meeting  0.849549761
+764  2023-08-11 Twitter   carol_slack     Great work!  0.782265475
+765  2023-08-12   Email alice@example  Exciting news! -0.995861550
+766  2023-08-11   Slack   @bob_tweets     Great work! -0.549234209
+767  2023-08-03   Email   @frank_chat    Fun weekend!  0.992682932
+768  2023-08-08 Twitter   carol_slack  Exciting news!  0.614791796
+769  2023-08-01 Twitter  @erin_tweets Hello everyone! -0.325806037
+770  2023-08-10   Slack   @bob_tweets  Exciting news! -0.873230109
+771  2023-08-12   Email alice@example    Team meeting  0.255163795
+772  2023-08-16   Email   carol_slack Hello everyone! -0.851052538
+773  2023-08-10 Twitter  @erin_tweets     Great work!  0.181200765
+774  2023-08-09   Email   @frank_chat Hello everyone! -0.633588556
+775  2023-08-01 Twitter   @frank_chat     Great work!  0.159243134
+776  2023-08-15   Slack  dave@example     Great work! -0.481857921
+777  2023-08-19 Twitter alice@example Hello everyone! -0.378329881
+778  2023-08-04 Twitter   @frank_chat  Exciting news!  0.795437461
+779  2023-08-16 Twitter   @bob_tweets     Great work! -0.674055766
+780  2023-08-07   Slack  dave@example Hello everyone!  0.747580624
+781  2023-08-14 Twitter   carol_slack Need assistance  0.739025190
+782  2023-08-15   Slack   @frank_chat Hello everyone! -0.508614742
+783  2023-08-14 Twitter   @bob_tweets  Exciting news!  0.671785708
+784  2023-08-10   Slack alice@example Need assistance -0.917325706
+785  2023-08-09 Twitter  @erin_tweets Need assistance -0.600080754
+786  2023-08-11   Email   @bob_tweets     Great work! -0.539260621
+787  2023-08-02   Slack   carol_slack     Great work!  0.066785066
+788  2023-08-15 Twitter   carol_slack    Team meeting -0.074092148
+789  2023-08-06 Twitter   @bob_tweets  Exciting news!  0.979591473
+790  2023-08-07   Slack   @bob_tweets Need assistance -0.846264025
+791  2023-08-15   Slack  @erin_tweets Hello everyone! -0.562214842
+792  2023-08-15   Email   @frank_chat    Fun weekend!  0.535877908
+793  2023-08-13   Slack  dave@example Hello everyone! -0.945477226
+794  2023-08-12 Twitter  @erin_tweets Need assistance -0.329706852
+795  2023-08-19 Twitter   @bob_tweets Hello everyone!  0.420571170
+796  2023-08-19 Twitter   @frank_chat  Exciting news!  0.221380584
+797  2023-08-06 Twitter   carol_slack    Fun weekend!  0.394200163
+798  2023-08-11   Slack   carol_slack    Team meeting  0.921573296
+799  2023-08-12   Slack   carol_slack    Team meeting  0.504667453
+800  2023-08-13   Slack alice@example    Team meeting -0.927027794
+801  2023-08-14   Email   @bob_tweets    Team meeting -0.996662613
+802  2023-08-09   Slack  @erin_tweets    Fun weekend!  0.525517232
+803  2023-08-17   Slack alice@example     Great work! -0.853163924
+804  2023-08-09   Slack   carol_slack Hello everyone!  0.346090994
+805  2023-08-06   Slack  @erin_tweets  Exciting news!  0.063273371
+806  2023-08-19   Slack   @frank_chat    Team meeting -0.887928675
+807  2023-08-17 Twitter   @frank_chat    Team meeting -0.608078998
+808  2023-08-10   Email  @erin_tweets Hello everyone!  0.063933458
+809  2023-08-12 Twitter   @bob_tweets    Fun weekend!  0.226440192
+810  2023-08-18   Slack alice@example     Great work! -0.114574431
+811  2023-08-17 Twitter   carol_slack Need assistance -0.065970336
+812  2023-08-10   Slack   @frank_chat Hello everyone!  0.672468295
+813  2023-08-12   Email alice@example  Exciting news! -0.616592484
+814  2023-08-04   Slack   @frank_chat Need assistance  0.165087673
+815  2023-08-13   Email   @bob_tweets  Exciting news!  0.553149406
+816  2023-08-04   Email   @bob_tweets    Fun weekend! -0.953222217
+817  2023-08-09   Email alice@example    Fun weekend!  0.893210486
+818  2023-08-11 Twitter alice@example Hello everyone! -0.120084892
+819  2023-08-08   Slack  @erin_tweets Hello everyone! -0.568787924
+820  2023-08-11   Email alice@example    Team meeting -0.641849058
+821  2023-08-18 Twitter alice@example    Fun weekend!  0.977650215
+822  2023-08-16   Slack   @frank_chat    Fun weekend!  0.269629325
+823  2023-08-06   Slack   carol_slack Need assistance  0.572155187
+824  2023-08-04   Slack   @frank_chat    Fun weekend! -0.530567507
+825  2023-08-14 Twitter  dave@example    Fun weekend! -0.998980226
+826  2023-08-09 Twitter   @frank_chat Hello everyone!  0.649366590
+827  2023-08-12   Email   carol_slack    Team meeting -0.492082868
+828  2023-08-03   Slack alice@example Need assistance  0.135939530
+829  2023-08-07   Slack  dave@example Hello everyone!  0.593321668
+830  2023-08-18 Twitter  dave@example     Great work! -0.160749977
+831  2023-08-20   Slack   carol_slack    Fun weekend!  0.231915887
+832  2023-08-03   Email alice@example    Fun weekend!  0.312383833
+833  2023-08-14   Slack   @bob_tweets    Team meeting -0.709024122
+834  2023-08-18 Twitter   @bob_tweets    Fun weekend!  0.866654206
+835  2023-08-03   Email alice@example Hello everyone! -0.440484574
+836  2023-08-12 Twitter   carol_slack    Team meeting  0.704733795
+837  2023-08-10 Twitter   carol_slack     Great work!  0.268422757
+838  2023-08-18   Slack   @bob_tweets    Fun weekend! -0.898072343
+839  2023-08-19   Email   @frank_chat     Great work!  0.463513046
+840  2023-08-03   Email   carol_slack Need assistance -0.161143415
+841  2023-08-19   Email alice@example Hello everyone! -0.040838550
+842  2023-08-11   Slack   @frank_chat    Fun weekend!  0.312006338
+843  2023-08-20   Slack   @bob_tweets Hello everyone!  0.520647362
+844  2023-08-05 Twitter   @bob_tweets  Exciting news! -0.798021044
+845  2023-08-14 Twitter alice@example     Great work! -0.652119522
+846  2023-08-10   Email   @bob_tweets  Exciting news! -0.286527871
+847  2023-08-10 Twitter  @erin_tweets     Great work!  0.282790715
+848  2023-08-07 Twitter  @erin_tweets     Great work! -0.597466531
+849  2023-08-03   Slack   @frank_chat Hello everyone!  0.368215033
+850  2023-08-08   Slack  @erin_tweets Need assistance  0.593302410
+851  2023-08-16   Slack  @erin_tweets  Exciting news! -0.113282133
+852  2023-08-12   Email   carol_slack Need assistance  0.937844194
+853  2023-08-10   Email   @frank_chat    Fun weekend! -0.520876877
+854  2023-08-19   Email  @erin_tweets     Great work!  0.570171806
+855  2023-08-19   Email  dave@example    Team meeting -0.528815492
+856  2023-08-05   Email   @bob_tweets Hello everyone!  0.725036937
+857  2023-08-05 Twitter   carol_slack Hello everyone! -0.279889458
+858  2023-08-12 Twitter   carol_slack    Fun weekend! -0.455487390
+859  2023-08-03 Twitter   @bob_tweets Hello everyone!  0.401231622
+860  2023-08-19 Twitter  @erin_tweets  Exciting news!  0.638825124
+861  2023-08-05   Email alice@example Hello everyone! -0.822144668
+862  2023-08-07   Slack   @bob_tweets Hello everyone! -0.160779689
+863  2023-08-14 Twitter   @bob_tweets    Fun weekend!  0.567614020
+864  2023-08-11 Twitter  @erin_tweets Need assistance -0.102778860
+865  2023-08-04 Twitter   @bob_tweets  Exciting news!  0.053784013
+866  2023-08-07   Slack   @bob_tweets    Fun weekend! -0.511013610
+867  2023-08-10 Twitter  dave@example    Team meeting -0.879799920
+868  2023-08-06   Slack  @erin_tweets     Great work! -0.387922954
+869  2023-08-10   Slack  dave@example  Exciting news! -0.750027833
+870  2023-08-01   Slack   @bob_tweets Need assistance -0.614020258
+871  2023-08-17   Email   @frank_chat  Exciting news! -0.770805090
+872  2023-08-15 Twitter   carol_slack Hello everyone! -0.638266036
+873  2023-08-16 Twitter  dave@example    Team meeting  0.796688539
+874  2023-08-13   Slack   carol_slack Hello everyone! -0.416070993
+875  2023-08-03   Slack   @bob_tweets     Great work!  0.884830707
+876  2023-08-14 Twitter alice@example     Great work! -0.232635738
+877  2023-08-01 Twitter  @erin_tweets  Exciting news!  0.423581860
+878  2023-08-05   Email alice@example Need assistance  0.694902051
+879  2023-08-14   Slack alice@example Hello everyone! -0.798660460
+880  2023-08-07 Twitter   @bob_tweets     Great work! -0.389785778
+881  2023-08-12   Email alice@example Need assistance  0.120129855
+882  2023-08-14   Slack alice@example Hello everyone! -0.691606675
+883  2023-08-07   Slack   @bob_tweets     Great work!  0.872962321
+884  2023-08-05 Twitter  @erin_tweets    Fun weekend!  0.619198539
+885  2023-08-01   Email   carol_slack     Great work!  0.605523043
+886  2023-08-14   Email  dave@example Hello everyone! -0.359136123
+887  2023-08-16   Email   @bob_tweets     Great work! -0.351176404
+888  2023-08-08 Twitter  dave@example Need assistance  0.911442756
+889  2023-08-13   Email alice@example Need assistance  0.596431601
+890  2023-08-01 Twitter   carol_slack     Great work! -0.311684015
+891  2023-08-09   Email   @frank_chat    Fun weekend! -0.789119672
+892  2023-08-19   Slack   @frank_chat    Team meeting -0.472906698
+893  2023-08-19   Slack  dave@example    Team meeting -0.789976987
+894  2023-08-06   Slack   @bob_tweets Need assistance  0.743181323
+895  2023-08-01   Email   @frank_chat    Team meeting -0.307752223
+896  2023-08-01   Email  dave@example     Great work! -0.948017055
+897  2023-08-05   Email   @frank_chat    Team meeting  0.611721705
+898  2023-08-06   Email  @erin_tweets Hello everyone! -0.318016798
+899  2023-08-11   Slack  @erin_tweets    Team meeting -0.893834382
+900  2023-08-20   Email   carol_slack    Team meeting  0.082343857
+901  2023-08-03   Slack  @erin_tweets Need assistance -0.600851388
+902  2023-08-18   Slack   @bob_tweets    Team meeting  0.192284770
+903  2023-08-10   Email  dave@example Need assistance  0.834841503
+904  2023-08-17 Twitter   @bob_tweets     Great work!  0.401612313
+905  2023-08-08   Slack  @erin_tweets    Team meeting  0.068864945
+906  2023-08-20 Twitter   @frank_chat  Exciting news!  0.307898677
+907  2023-08-07 Twitter   @bob_tweets     Great work! -0.548428072
+908  2023-08-15   Slack alice@example Need assistance  0.899728119
+909  2023-08-08   Email   carol_slack     Great work!  0.710615378
+910  2023-08-14   Email  @erin_tweets    Fun weekend!  0.035476264
+911  2023-08-01 Twitter   @frank_chat Need assistance -0.003094339
+912  2023-08-10 Twitter   @frank_chat    Fun weekend! -0.528116655
+913  2023-08-20 Twitter  dave@example     Great work! -0.124954135
+914  2023-08-10   Slack   @frank_chat Need assistance  0.626154714
+915  2023-08-02   Slack   carol_slack    Fun weekend!  0.045978463
+916  2023-08-09   Email  dave@example    Fun weekend!  0.698494015
+917  2023-08-10   Slack   @frank_chat Need assistance -0.198273231
+918  2023-08-13   Email   @bob_tweets Hello everyone!  0.264306294
+919  2023-08-05   Slack  @erin_tweets    Fun weekend! -0.240693055
+920  2023-08-20   Email  dave@example    Team meeting -0.075425136
+921  2023-08-15 Twitter alice@example     Great work!  0.798867194
+922  2023-08-18   Slack alice@example    Fun weekend! -0.088887415
+923  2023-08-12 Twitter  @erin_tweets Need assistance  0.298994374
+924  2023-08-17 Twitter alice@example  Exciting news!  0.968932204
+925  2023-08-10   Slack  dave@example     Great work!  0.746216161
+926  2023-08-10   Slack alice@example    Team meeting -0.939407335
+927  2023-08-02   Slack   @bob_tweets     Great work! -0.666475324
+928  2023-08-10 Twitter   carol_slack Need assistance  0.809991531
+929  2023-08-09   Slack  dave@example Need assistance  0.662048494
+930  2023-08-18 Twitter alice@example Hello everyone! -0.936083395
+931  2023-08-01   Email   carol_slack     Great work! -0.389590032
+932  2023-08-11   Email   carol_slack    Fun weekend!  0.355941510
+933  2023-08-03   Slack  @erin_tweets Need assistance  0.896539724
+934  2023-08-20   Email alice@example Hello everyone! -0.555095884
+935  2023-08-17   Email  dave@example    Team meeting -0.047711935
+936  2023-08-13 Twitter  dave@example  Exciting news! -0.618614707
+937  2023-08-13 Twitter   carol_slack    Fun weekend! -0.412842807
+938  2023-08-04   Email   @bob_tweets     Great work! -0.251496902
+939  2023-08-16   Email   @bob_tweets Need assistance -0.459899545
+940  2023-08-17 Twitter   carol_slack Need assistance -0.101536875
+941  2023-08-06 Twitter   carol_slack  Exciting news! -0.329569053
+942  2023-08-01   Slack alice@example  Exciting news!  0.350437745
+943  2023-08-08   Email alice@example  Exciting news!  0.529548995
+944  2023-08-13 Twitter alice@example     Great work! -0.806566573
+945  2023-08-06   Slack   carol_slack  Exciting news! -0.249575844
+946  2023-08-08   Email  @erin_tweets Hello everyone! -0.064463819
+947  2023-08-20   Slack  @erin_tweets Hello everyone! -0.357717138
+948  2023-08-01 Twitter   @frank_chat Need assistance -0.696885624
+949  2023-08-02   Slack  dave@example  Exciting news! -0.662697271
+950  2023-08-11   Email  dave@example Need assistance  0.060486035
+951  2023-08-11   Slack  @erin_tweets     Great work! -0.704862314
+952  2023-08-05   Slack   @frank_chat Need assistance -0.129298556
+953  2023-08-07   Email   @bob_tweets    Fun weekend!  0.079245736
+954  2023-08-20 Twitter   carol_slack Hello everyone!  0.640248996
+955  2023-08-01   Slack  dave@example Need assistance -0.988749139
+956  2023-08-09   Email  @erin_tweets Need assistance  0.953375103
+957  2023-08-12   Slack   carol_slack Need assistance -0.044029484
+958  2023-08-19   Slack alice@example  Exciting news!  0.502961815
+959  2023-08-17 Twitter   carol_slack  Exciting news! -0.237763272
+960  2023-08-11 Twitter   @frank_chat Hello everyone!  0.807257727
+961  2023-08-17 Twitter  @erin_tweets    Team meeting -0.666378770
+962  2023-08-06   Email  dave@example Need assistance  0.492307736
+963  2023-08-10   Email   @frank_chat  Exciting news! -0.010767524
+964  2023-08-18   Email   @bob_tweets Need assistance  0.453627230
+965  2023-08-07   Slack   carol_slack     Great work!  0.937586371
+966  2023-08-09   Email   @frank_chat    Team meeting -0.712716471
+967  2023-08-18 Twitter   @bob_tweets     Great work! -0.839583620
+968  2023-08-06 Twitter  dave@example    Team meeting  0.165403601
+969  2023-08-02   Slack  @erin_tweets     Great work! -0.887057793
+970  2023-08-17   Email   @frank_chat Need assistance -0.837423526
+971  2023-08-08   Email   @frank_chat    Team meeting  0.778342899
+972  2023-08-20 Twitter  @erin_tweets  Exciting news!  0.131818828
+973  2023-08-02 Twitter  @erin_tweets Need assistance  0.821079701
+974  2023-08-08   Slack  @erin_tweets  Exciting news!  0.085280708
+975  2023-08-01   Email  @erin_tweets    Fun weekend!  0.203746784
+976  2023-08-12 Twitter  dave@example     Great work! -0.462906254
+977  2023-08-19 Twitter alice@example Hello everyone!  0.857508211
+978  2023-08-12 Twitter alice@example    Team meeting  0.582250814
+979  2023-08-07   Slack   @bob_tweets     Great work!  0.170066014
+980  2023-08-08 Twitter alice@example     Great work!  0.552484959
+981  2023-08-14   Email  @erin_tweets     Great work! -0.129584252
+982  2023-08-13   Email  @erin_tweets    Fun weekend!  0.418006041
+983  2023-08-18   Email alice@example    Team meeting -0.377541550
+984  2023-08-10 Twitter  dave@example    Fun weekend! -0.363247766
+985  2023-08-03   Slack   @bob_tweets Need assistance  0.496275815
+986  2023-08-08 Twitter   @bob_tweets Need assistance -0.716619523
+987  2023-08-05   Email   @bob_tweets    Team meeting  0.243233590
+988  2023-08-17   Slack  @erin_tweets Hello everyone!  0.937329018
+989  2023-08-03   Slack  dave@example     Great work!  0.675534202
+990  2023-08-07   Slack alice@example    Fun weekend!  0.844455994
+991  2023-08-18   Slack   @frank_chat     Great work! -0.071027102
+992  2023-08-12   Slack  @erin_tweets Hello everyone! -0.360894154
+993  2023-08-10   Email   @bob_tweets Need assistance -0.316063035
+994  2023-08-14   Slack  dave@example  Exciting news! -0.531753783
+995  2023-08-04 Twitter  dave@example    Team meeting -0.785379849
+996  2023-08-05 Twitter   @frank_chat Hello everyone!  0.599585856
+997  2023-08-12 Twitter alice@example  Exciting news!  0.874988238
+998  2023-08-07   Slack   carol_slack  Exciting news!  0.186763622
+999  2023-08-08   Slack  @erin_tweets    Fun weekend!  0.172925062
+1000 2023-08-03   Email   @frank_chat Hello everyone!  0.583445542
+     sentiment_label
+1           Positive
+2           Positive
+3           Negative
+4           Positive
+5           Positive
+6           Negative
+7           Negative
+8           Negative
+9           Positive
+10          Negative
+11          Positive
+12          Positive
+13          Positive
+14          Positive
+15          Positive
+16          Positive
+17          Positive
+18          Positive
+19          Negative
+20          Positive
+21          Negative
+22          Negative
+23          Positive
+24          Positive
+25          Negative
+26          Positive
+27          Negative
+28          Positive
+29          Positive
+30          Negative
+31          Negative
+32          Positive
+33          Positive
+34          Negative
+35          Positive
+36          Positive
+37          Positive
+38          Negative
+39          Negative
+40          Positive
+41          Positive
+42          Negative
+43          Negative
+44          Negative
+45          Negative
+46          Positive
+47          Positive
+48          Positive
+49          Negative
+50          Positive
+51          Positive
+52          Negative
+53          Positive
+54          Negative
+55          Negative
+56          Positive
+57          Positive
+58          Positive
+59          Negative
+60          Negative
+61          Positive
+62          Negative
+63          Negative
+64          Positive
+65          Negative
+66          Positive
+67          Negative
+68          Positive
+69          Positive
+70          Positive
+71          Negative
+72          Negative
+73          Negative
+74          Positive
+75          Negative
+76          Positive
+77          Negative
+78          Positive
+79          Negative
+80          Positive
+81          Positive
+82          Positive
+83          Positive
+84          Negative
+85          Negative
+86          Negative
+87          Negative
+88          Negative
+89          Positive
+90          Negative
+91          Negative
+92          Negative
+93          Negative
+94          Negative
+95          Negative
+96          Negative
+97          Negative
+98          Negative
+99          Negative
+100         Negative
+101         Positive
+102         Positive
+103         Positive
+104         Positive
+105         Negative
+106         Negative
+107         Positive
+108         Negative
+109         Negative
+110         Negative
+111         Positive
+112         Negative
+113         Negative
+114         Negative
+115         Positive
+116         Negative
+117         Negative
+118         Positive
+119         Negative
+120         Negative
+121         Positive
+122         Negative
+123         Negative
+124         Negative
+125         Negative
+126         Positive
+127         Negative
+128         Negative
+129         Positive
+130         Negative
+131         Negative
+132         Positive
+133         Positive
+134         Positive
+135         Positive
+136         Positive
+137         Positive
+138         Positive
+139         Positive
+140         Negative
+141         Positive
+142         Positive
+143         Negative
+144         Positive
+145         Negative
+146         Positive
+147         Negative
+148         Positive
+149         Positive
+150         Positive
+151         Negative
+152         Positive
+153         Negative
+154         Positive
+155         Negative
+156         Negative
+157         Negative
+158         Negative
+159         Positive
+160         Negative
+161         Negative
+162         Positive
+163         Positive
+164         Positive
+165         Negative
+166         Negative
+167         Negative
+168         Negative
+169         Positive
+170         Positive
+171         Negative
+172         Positive
+173         Negative
+174         Positive
+175         Positive
+176         Negative
+177         Negative
+178         Negative
+179         Negative
+180         Positive
+181         Negative
+182         Negative
+183         Positive
+184         Negative
+185         Positive
+186         Negative
+187         Positive
+188         Negative
+189         Positive
+190         Negative
+191         Positive
+192         Negative
+193         Positive
+194         Positive
+195         Positive
+196         Negative
+197         Negative
+198         Negative
+199         Positive
+200         Positive
+201         Positive
+202         Positive
+203         Negative
+204         Positive
+205         Negative
+206         Positive
+207         Positive
+208         Negative
+209         Positive
+210         Positive
+211         Negative
+212         Positive
+213         Positive
+214         Positive
+215         Positive
+216         Negative
+217         Negative
+218         Negative
+219         Positive
+220         Positive
+221         Negative
+222         Negative
+223         Positive
+224         Negative
+225         Positive
+226         Negative
+227         Negative
+228         Positive
+229         Negative
+230         Negative
+231         Positive
+232         Negative
+233         Negative
+234         Negative
+235         Positive
+236         Positive
+237         Positive
+238         Positive
+239         Positive
+240         Positive
+241         Negative
+242         Negative
+243         Positive
+244         Positive
+245         Negative
+246         Negative
+247         Positive
+248         Positive
+249         Negative
+250         Negative
+251         Positive
+252         Positive
+253         Negative
+254         Positive
+255         Negative
+256         Positive
+257         Positive
+258         Positive
+259         Positive
+260         Positive
+261         Positive
+262         Negative
+263         Positive
+264         Negative
+265         Positive
+266         Negative
+267         Positive
+268         Positive
+269         Negative
+270         Negative
+271         Positive
+272         Positive
+273         Negative
+274         Positive
+275         Negative
+276         Negative
+277         Negative
+278         Negative
+279         Positive
+280         Negative
+281         Positive
+282         Negative
+283         Positive
+284         Positive
+285         Negative
+286         Negative
+287         Positive
+288         Positive
+289         Positive
+290         Negative
+291         Positive
+292         Positive
+293         Positive
+294         Positive
+295         Negative
+296         Positive
+297         Positive
+298         Negative
+299         Positive
+300         Negative
+301         Positive
+302         Negative
+303         Negative
+304         Negative
+305         Positive
+306         Negative
+307         Negative
+308         Negative
+309         Positive
+310         Positive
+311         Negative
+312         Positive
+313         Negative
+314         Negative
+315         Positive
+316         Negative
+317         Negative
+318         Positive
+319         Negative
+320         Positive
+321         Positive
+322         Positive
+323         Negative
+324         Negative
+325         Negative
+326         Positive
+327         Negative
+328         Positive
+329         Positive
+330         Negative
+331         Positive
+332         Positive
+333         Negative
+334         Negative
+335         Positive
+336         Negative
+337         Negative
+338         Positive
+339         Negative
+340         Positive
+341         Negative
+342         Positive
+343         Negative
+344         Positive
+345         Positive
+346         Positive
+347         Positive
+348         Negative
+349         Negative
+350         Negative
+351         Positive
+352         Negative
+353         Negative
+354         Negative
+355         Positive
+356         Positive
+357         Positive
+358         Positive
+359         Positive
+360         Positive
+361         Positive
+362         Positive
+363         Positive
+364         Positive
+365         Positive
+366         Positive
+367         Positive
+368         Positive
+369         Negative
+370         Negative
+371         Positive
+372         Positive
+373         Positive
+374         Positive
+375         Negative
+376         Positive
+377         Negative
+378         Negative
+379         Negative
+380         Positive
+381         Negative
+382         Positive
+383         Positive
+384         Negative
+385         Negative
+386         Positive
+387         Negative
+388         Positive
+389         Positive
+390         Negative
+391         Positive
+392         Positive
+393         Negative
+394         Negative
+395         Positive
+396         Negative
+397         Negative
+398         Negative
+399         Positive
+400         Negative
+401         Positive
+402         Positive
+403         Positive
+404         Negative
+405         Negative
+406         Positive
+407         Negative
+408         Positive
+409         Positive
+410         Positive
+411         Positive
+412         Positive
+413         Positive
+414         Positive
+415         Negative
+416         Negative
+417         Negative
+418         Positive
+419         Positive
+420         Negative
+421         Negative
+422         Negative
+423         Negative
+424         Negative
+425         Positive
+426         Positive
+427         Positive
+428         Negative
+429         Positive
+430         Negative
+431         Negative
+432         Positive
+433         Positive
+434         Positive
+435         Positive
+436         Negative
+437         Negative
+438         Positive
+439         Negative
+440         Positive
+441         Positive
+442         Positive
+443         Negative
+444         Negative
+445         Positive
+446         Positive
+447         Positive
+448         Positive
+449         Positive
+450         Positive
+451         Negative
+452         Negative
+453         Positive
+454         Negative
+455         Negative
+456         Positive
+457         Negative
+458         Positive
+459         Positive
+460         Negative
+461         Negative
+462         Negative
+463         Negative
+464         Negative
+465         Negative
+466         Positive
+467         Positive
+468         Positive
+469         Positive
+470         Positive
+471         Positive
+472         Positive
+473         Positive
+474         Negative
+475         Negative
+476         Positive
+477         Positive
+478         Negative
+479         Negative
+480         Negative
+481         Negative
+482         Positive
+483         Negative
+484         Negative
+485         Positive
+486         Positive
+487         Negative
+488         Negative
+489         Negative
+490         Positive
+491         Negative
+492         Positive
+493         Positive
+494         Negative
+495         Negative
+496         Negative
+497         Positive
+498         Positive
+499         Negative
+500         Negative
+501         Positive
+502         Positive
+503         Positive
+504         Negative
+505         Positive
+506         Negative
+507         Negative
+508         Positive
+509         Negative
+510         Negative
+511         Negative
+512         Positive
+513         Positive
+514         Negative
+515         Negative
+516         Positive
+517         Negative
+518         Positive
+519         Positive
+520         Positive
+521         Positive
+522         Positive
+523         Positive
+524         Negative
+525         Positive
+526         Negative
+527         Positive
+528         Negative
+529         Positive
+530         Negative
+531         Positive
+532         Negative
+533         Negative
+534         Negative
+535         Positive
+536         Positive
+537         Negative
+538         Positive
+539         Positive
+540         Negative
+541         Positive
+542         Negative
+543         Positive
+544         Negative
+545         Positive
+546         Positive
+547         Positive
+548         Negative
+549         Negative
+550         Positive
+551         Negative
+552         Positive
+553         Negative
+554         Positive
+555         Negative
+556         Positive
+557         Negative
+558         Negative
+559         Positive
+560         Positive
+561         Positive
+562         Negative
+563         Negative
+564         Negative
+565         Positive
+566         Negative
+567         Negative
+568         Positive
+569         Positive
+570         Positive
+571         Negative
+572         Positive
+573         Positive
+574         Negative
+575         Negative
+576         Positive
+577         Negative
+578         Positive
+579         Positive
+580         Negative
+581         Positive
+582         Negative
+583         Positive
+584         Positive
+585         Positive
+586         Negative
+587         Positive
+588         Negative
+589         Positive
+590         Positive
+591         Positive
+592         Negative
+593         Positive
+594         Negative
+595         Positive
+596         Positive
+597         Negative
+598         Positive
+599         Positive
+600         Positive
+601         Negative
+602         Negative
+603         Negative
+604         Negative
+605         Negative
+606         Negative
+607         Negative
+608         Negative
+609         Positive
+610         Positive
+611         Negative
+612         Positive
+613         Negative
+614         Positive
+615         Positive
+616         Negative
+617         Positive
+618         Negative
+619         Positive
+620         Negative
+621         Negative
+622         Positive
+623         Negative
+624         Positive
+625         Negative
+626         Positive
+627         Negative
+628         Positive
+629         Negative
+630         Positive
+631         Negative
+632         Negative
+633         Positive
+634         Positive
+635         Positive
+636         Positive
+637         Negative
+638         Negative
+639         Negative
+640         Positive
+641         Negative
+642         Positive
+643         Positive
+644         Negative
+645         Positive
+646         Negative
+647         Positive
+648         Negative
+649         Negative
+650         Negative
+651         Negative
+652         Negative
+653         Positive
+654         Positive
+655         Positive
+656         Positive
+657         Positive
+658         Negative
+659         Positive
+660         Positive
+661         Positive
+662         Negative
+663         Positive
+664         Negative
+665         Positive
+666         Negative
+667         Negative
+668         Positive
+669         Negative
+670         Negative
+671         Positive
+672         Negative
+673         Positive
+674         Negative
+675         Negative
+676         Negative
+677         Positive
+678         Negative
+679         Negative
+680         Positive
+681         Negative
+682         Negative
+683         Positive
+684         Positive
+685         Positive
+686         Positive
+687         Negative
+688         Positive
+689         Negative
+690         Positive
+691         Negative
+692         Negative
+693         Positive
+694         Negative
+695         Negative
+696         Negative
+697         Negative
+698         Positive
+699         Negative
+700         Positive
+701         Negative
+702         Negative
+703         Negative
+704         Positive
+705         Negative
+706         Positive
+707         Positive
+708         Positive
+709         Negative
+710         Positive
+711         Positive
+712         Negative
+713         Positive
+714         Negative
+715         Negative
+716         Positive
+717         Positive
+718         Positive
+719         Positive
+720         Negative
+721         Positive
+722         Negative
+723         Negative
+724         Negative
+725         Negative
+726         Negative
+727         Negative
+728         Positive
+729         Positive
+730         Positive
+731         Positive
+732         Negative
+733         Negative
+734         Positive
+735         Positive
+736         Negative
+737         Positive
+738         Positive
+739         Positive
+740         Positive
+741         Positive
+742         Negative
+743         Negative
+744         Positive
+745         Positive
+746         Positive
+747         Negative
+748         Positive
+749         Negative
+750         Positive
+751         Negative
+752         Negative
+753         Negative
+754         Positive
+755         Negative
+756         Positive
+757         Positive
+758         Negative
+759         Negative
+760         Positive
+761         Positive
+762         Positive
+763         Positive
+764         Positive
+765         Negative
+766         Negative
+767         Positive
+768         Positive
+769         Negative
+770         Negative
+771         Positive
+772         Negative
+773         Positive
+774         Negative
+775         Positive
+776         Negative
+777         Negative
+778         Positive
+779         Negative
+780         Positive
+781         Positive
+782         Negative
+783         Positive
+784         Negative
+785         Negative
+786         Negative
+787         Positive
+788         Negative
+789         Positive
+790         Negative
+791         Negative
+792         Positive
+793         Negative
+794         Negative
+795         Positive
+796         Positive
+797         Positive
+798         Positive
+799         Positive
+800         Negative
+801         Negative
+802         Positive
+803         Negative
+804         Positive
+805         Positive
+806         Negative
+807         Negative
+808         Positive
+809         Positive
+810         Negative
+811         Negative
+812         Positive
+813         Negative
+814         Positive
+815         Positive
+816         Negative
+817         Positive
+818         Negative
+819         Negative
+820         Negative
+821         Positive
+822         Positive
+823         Positive
+824         Negative
+825         Negative
+826         Positive
+827         Negative
+828         Positive
+829         Positive
+830         Negative
+831         Positive
+832         Positive
+833         Negative
+834         Positive
+835         Negative
+836         Positive
+837         Positive
+838         Negative
+839         Positive
+840         Negative
+841         Negative
+842         Positive
+843         Positive
+844         Negative
+845         Negative
+846         Negative
+847         Positive
+848         Negative
+849         Positive
+850         Positive
+851         Negative
+852         Positive
+853         Negative
+854         Positive
+855         Negative
+856         Positive
+857         Negative
+858         Negative
+859         Positive
+860         Positive
+861         Negative
+862         Negative
+863         Positive
+864         Negative
+865         Positive
+866         Negative
+867         Negative
+868         Negative
+869         Negative
+870         Negative
+871         Negative
+872         Negative
+873         Positive
+874         Negative
+875         Positive
+876         Negative
+877         Positive
+878         Positive
+879         Negative
+880         Negative
+881         Positive
+882         Negative
+883         Positive
+884         Positive
+885         Positive
+886         Negative
+887         Negative
+888         Positive
+889         Positive
+890         Negative
+891         Negative
+892         Negative
+893         Negative
+894         Positive
+895         Negative
+896         Negative
+897         Positive
+898         Negative
+899         Negative
+900         Positive
+901         Negative
+902         Positive
+903         Positive
+904         Positive
+905         Positive
+906         Positive
+907         Negative
+908         Positive
+909         Positive
+910         Positive
+911         Negative
+912         Negative
+913         Negative
+914         Positive
+915         Positive
+916         Positive
+917         Negative
+918         Positive
+919         Negative
+920         Negative
+921         Positive
+922         Negative
+923         Positive
+924         Positive
+925         Positive
+926         Negative
+927         Negative
+928         Positive
+929         Positive
+930         Negative
+931         Negative
+932         Positive
+933         Positive
+934         Negative
+935         Negative
+936         Negative
+937         Negative
+938         Negative
+939         Negative
+940         Negative
+941         Negative
+942         Positive
+943         Positive
+944         Negative
+945         Negative
+946         Negative
+947         Negative
+948         Negative
+949         Negative
+950         Positive
+951         Negative
+952         Negative
+953         Positive
+954         Positive
+955         Negative
+956         Positive
+957         Negative
+958         Positive
+959         Negative
+960         Positive
+961         Negative
+962         Positive
+963         Negative
+964         Positive
+965         Positive
+966         Negative
+967         Negative
+968         Positive
+969         Negative
+970         Negative
+971         Positive
+972         Positive
+973         Positive
+974         Positive
+975         Positive
+976         Negative
+977         Positive
+978         Positive
+979         Positive
+980         Positive
+981         Negative
+982         Positive
+983         Negative
+984         Negative
+985         Positive
+986         Negative
+987         Positive
+988         Positive
+989         Positive
+990         Positive
+991         Negative
+992         Negative
+993         Negative
+994         Negative
+995         Negative
+996         Positive
+997         Positive
+998         Positive
+999         Positive
+1000        Positive</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="question-11-message-impact" class="level4">
+<h4 class="anchored" data-anchor-id="question-11-message-impact">Question-11: Message Impact</h4>
+<p>Create a new dataframe using the mutate and arrange commands that calculates the product of the sentiment score and the length of each message. Arrange the results in descending order.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sentiment_length_product =</span> sentiment <span class="sc">*</span> <span class="fu">nchar</span>(message))</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="ot">&lt;-</span> new_data <span class="sc">%&gt;%</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sentiment_length_product))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="question-12-daily-message-challenge" class="level4">
+<h4 class="anchored" data-anchor-id="question-12-daily-message-challenge">Question-12: Daily Message Challenge</h4>
+<p>Use the group_by, summarise, and arrange commands to find the day with the highest total number of characters sent across all messages in the “comm_data” dataframe.</p>
+<p><strong>Solution:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code here</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>char_count_by_day <span class="ot">&lt;-</span> comm_data <span class="sc">%&gt;%</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date) <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_chars_sent =</span> <span class="fu">sum</span>(<span class="fu">nchar</span>(message)))</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>sorted_char_count <span class="ot">&lt;-</span> char_count_by_day <span class="sc">%&gt;%</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_chars_sent))</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>day_with_highest_chars <span class="ot">&lt;-</span> sorted_char_count[<span class="dv">1</span>, ]</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>day_with_highest_chars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  date       total_chars_sent
+  &lt;chr&gt;                 &lt;int&gt;
+1 2023-08-10              875</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="question-13-untidy-data" class="level4">
+<h4 class="anchored" data-anchor-id="question-13-untidy-data">Question-13: Untidy data</h4>
+<p>Can you list at least two reasons why the dataset illustrated in slide 10 is non-tidy? How can it be made Tidy?</p>
+<p><strong>Solution:</strong> <em>Messy columns, missing data etc. all can lead to a need of reshaping of untidy dataset. pivot_longer from dplyr is an effective tool to rectify it.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

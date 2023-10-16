@@ -1,0 +1,14 @@
+{
+  "hash": "0414cbbb0f40e8d475a389b9978ecd57",
+  "result": {
+    "markdown": "---\ntitle: \"Challange 1\"\noutput:\n  html_document: default\n  pdf_document: default\ndate: \"2023-08-16\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::include_graphics(\"1.png\") \n```\n\n::: {.cell-output-display}\n![Replace text here withthe caption](1.png){width=800px height=350px}\n:::\n:::\n\n#This is Wang Zifang, but can call me Fang\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
