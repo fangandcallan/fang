@@ -1,0 +1,14 @@
+{
+  "hash": "3f29e7b41639a2c39e2c6eefd563d13b",
+  "result": {
+    "markdown": "---\ntitle: \"Project1\"\noutput:\n  html_document: default\n  pdf_document: default\ndate: \"2023-10-19\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n#Death Penalty in Texas and The Last Words\n\n#I have 2 datasets I'm planning to use, both of which are data from Texas and have offender's last words.\n#1. The offenders and their victim specs. \n#2. Offender's height and weight.\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
-About this site
+Hi my name is Zifang. I'm from Chinese Studies.
 
 ```{r}
 1 + 1
