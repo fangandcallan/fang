@@ -1,8 +1,10 @@
 {
-  "hash": "6e95283542bdb61491a3139846e14680",
+  "hash": "27cfa8d845cc4dfbed6965f6ee79690a",
   "result": {
-    "markdown": "---\ntitle: \"fangandcallan.github.io\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"fangandcallan.github.io\"\n---\n\n\nHi my name is Zifang. I'm from Chinese Studies.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
