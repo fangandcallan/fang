@@ -2,9 +2,7 @@
 title: "fangandcallan.github.io"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi my name is Zifang. I'm from Chinese Studies.
 
 ```{r}
 1 + 1
