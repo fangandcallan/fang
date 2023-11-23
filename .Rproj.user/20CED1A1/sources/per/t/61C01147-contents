@@ -1,0 +1,240 @@
+---
+title: "The Eyes You'll Shut Forever"
+---
+
+They are executed. But are they resting in peace?
+
+```{r}
+library(shiny)
+library(shinyjs)
+
+# Shiny UI
+ui <- fluidPage(
+  shinyjs::useShinyjs(),
+  titlePanel("This is the choice between the living and the dead"), 
+  # Placed on top of the video to indicate what's it about.
+  tags$iframe(
+    src = "https://www.youtube.com/embed/Rrb5ElwwSh0?autoplay=1",
+    width = "640",
+    height = "360"
+  ), # Intro to the eyes and the aim: shut the eyes
+  
+  sidebarLayout(
+    sidebarPanel(
+      h3("Select Eyes:"),
+      radioButtons("eyeColor", "",
+                   choices = c("Brown eyes", "Blue eyes", "Green eyes")
+      ),
+    ), # Choosing eyes to interact with
+    mainPanel(
+      h3("Last Statement:"),
+      textOutput("lastStatement"),
+      br(), # Display last statement to inform user of making choices
+      actionButton("closeEyes", "Close their eyes"),
+      actionButton("burnBody", "Condemn their body by burning them")
+    ) # Two actional ways to shut the eyes
+  )
+)
+
+# Shiny Server
+server <- function(input, output, session) {
+  # Read data from CSV
+  merged_data <- read.csv("merged_data.csv")
+  
+  # Function to change video based on user interaction
+updateVideo <- function(session, newSrc) {
+  session$sendCustomMessage(type = "updateVideo", message = list(src = newSrc))
+}
+
+  # Render last statement based on selected eye color
+  output$lastStatement <- renderText({
+    eye_color <- switch(input$eyeColor,
+      "Brown eyes" = "Brown",
+      "Blue eyes" = "Blue",
+      "Green eyes" = "Green"
+    ) # Linking variables based on eye color
+
+    if (eye_color == "") {
+      last_statements <- merged_data$Last.Statement[is.na(merged_data$EyeColor)]
+    } else {
+      last_statements <- merged_data$Last.Statement[merged_data$EyeColor == eye_color]
+    } # Linking last statements to eye color respectively
+
+    if (length(last_statements) == 0) {
+      return("This person has left no words.")
+    } # In case there isn't a last word
+
+    random_statement <- sample(last_statements, 1)
+    random_statement
+  }) # Display a random statement based on the chosen eye
+
+  # Initialize counters for both buttons
+  closeEyesCount <- reactiveVal(0)
+  burnBodyCount <- reactiveVal(0)
+  
+  # Observe events for closing eyes button
+  observeEvent(input$closeEyes, {
+    # Increment the click count for "Close their eyes" button
+    closeEyesCount(closeEyesCount() + 1)
+    
+      videoUrl <- switch(
+            closeEyesCount(),
+    "https://www.youtube.com/embed/RScGNAsh9DMg?autoplay=1",
+    "https://www.youtube.com/embed/RScGNAsh9DMg?autoplay=1"
+  )
+
+  # Play the determined video
+  updateVideo(session, videoUrl)
+  
+    # Check if the click count reaches 3 or 5
+    if (closeEyesCount() == 3) {
+      # Play the first video respective to "Close their eyes"
+      updateVideo(session, "https://www.youtube.com/embed/RngcgrYjuf5U?autoplay=1")
+    } # Forgiveness is hope
+    if (closeEyesCount() == 5) {
+      # Play the second video respective to "Close their eyes"
+      updateVideo(session, "https://www.youtube.com/embed/RScGNAsh9DMg?autoplay=1") # Hope wins death
+    }
+  })
+
+  # Observe events for burning body button
+  observeEvent(input$burnBody, {
+    # Increment the click count for "Condemn their body by burning them" button
+    burnBodyCount(burnBodyCount() + 1)
+
+    # Check if the click count reaches 3 or 5
+    if (burnBodyCount() == 3) {
+      # Play the first video respective to "Condemn their body by burning them"
+      updateVideo(session, "https://www.youtube.com/embed/RiBvlNIYJkAo?autoplay=1")
+    } # Anger of fire
+    if (burnBodyCount() == 5) {
+      # Play the second video respective to "Condemn their body by burning them"
+      updateVideo(session, "https://www.youtube.com/embed/RfPudGbjwzTE?autoplay=1")
+    } # Hate will backfire
+  })
+}
+
+# Run the Shiny app
+shinyApp(ui, server)
+
+```
+
+```{r}
+library(shiny)
+library(shinyjs)
+
+    
+# Shiny UI
+ui <- fluidPage(
+  useShinyjs(),  # Initialize shinyjs
+
+  titlePanel("This is the choice between the living and the dead"), 
+
+  # Placed on top of the video to indicate what's it about.
+div(id = "video-container", 
+    tags$iframe(
+      src = "https://www.youtube.com/embed/Rrb5ElwwSh0",
+      width = "640",
+      height = "360"
+    )
+),
+  
+  sidebarLayout(
+    sidebarPanel(
+      h3("Select Eyes:"),
+      radioButtons("eyeColor", "",
+                   choices = c("Brown eyes", "Blue eyes", "Green eyes")
+      ),
+    ), # Choosing eyes to interact with
+    
+    mainPanel(
+      h3("Last Statement:"),
+      textOutput("lastStatement"),
+      br(), # Display last statement to inform user of making choices
+      actionButton("closeEyes", "Close their eyes"),
+      actionButton("burnBody", "Condemn their body by burning them")
+    ) # Two actional ways to shut the eyes
+  )
+)
+
+# Shiny Server
+server <- function(input, output, session) {
+  # Read data from CSV (replace with your actual data source)
+  merged_data <- read.csv("merged_data.csv")
+  
+  closeEyesCount=2
+  
+  # Render last statement based on selected eye color
+  output$lastStatement <- renderText({
+    eye_color <- switch(input$eyeColor,
+      "Brown eyes" = "Brown",
+      "Blue eyes" = "Blue",
+      "Green eyes" = "Green"
+    ) # Linking variables based on eye color
+
+    if (eye_color == "") {
+      last_statements <- merged_data$Last.Statement[is.na(merged_data$EyeColor)]
+    } else {
+      last_statements <- merged_data$Last.Statement[merged_data$EyeColor == eye_color]
+    } # Linking last statements to eye color respectively
+
+    if (length(last_statements) == 0) {
+      return("This person has left no words.")
+    } # In case there isn't a last word
+
+    random_statement <- sample(last_statements, 1)
+    random_statement
+  }) # Display a random statement based on the chosen eye
+
+  # Initialize counters for both buttons
+  
+  burnBodyCount <- reactiveVal(0)
+  
+  # Function to change video based on user interaction
+  updateVideo <- function(session, newSrc) {
+    session$sendCustomMessage(type = "updateVideo", message = newSrc)
+    runjs(paste0("shinyjs.loadYouTube('", newSrc, "')"))
+  }
+
+  # Observe events for closing eyes button
+  observeEvent(input$closeEyes, {
+    # Increment the click count for "Close their eyes" button
+    print(closeEyesCount)
+    closeEyesCount <<- closeEyesCount + 1
+    # Check if the click count reaches 3 or 5
+    if (closeEyesCount== 3) {
+      # Play the first video respective to "Close their eyes"
+      print("hi")
+      updateVideo(session, "https://www.youtube.com/embed/RngcgrYjuf5U")
+    } # Forgiveness is hope
+    if (closeEyesCount == 5) {
+      # Play the second video respective to "Close their eyes"
+      updateVideo(session, "https://www.youtube.com/embed/RScGNAsh9DMg") # Hope wins death
+    }
+  })
+
+  # Observe events for burning body button
+  observeEvent(input$burnBody, {
+    # Increment the click count for "Condemn their body by burning them" button
+    burnBodyCount(burnBodyCount() + 1)
+
+    # Check if the click count reaches 3 or 5
+    if (burnBodyCount() == 3) {
+      # Play the first video respective to "Condemn their body by burning them"
+      updateVideo(session, "https://www.youtube.com/embed/RiBvlNIYJkAo.mp4")
+    } # Anger of fire
+    if (burnBodyCount() == 5) {
+      # Play the second video respective to "Condemn their body by burning them"
+      updateVideo(session, "https://www.youtube.com/embed/RfPudGbjwzTE")
+    } # Hate will backfire
+  })
+}
+
+# Concluding the app
+onStop(function() {
+  print("You've made a choice. Live on with hope.")
+})
+
+# Run the Shiny app
+shinyApp(ui, server)
+```

@@ -1,0 +1,12 @@
+name: Eyes
+title: Eyes
+username: fangandcallan
+account: fangandcallan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10609262
+bundleId: 7960879
+url: https://fangandcallan.shinyapps.io/Eyes/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
