@@ -1,0 +1,71 @@
+---
+title: "Project"
+output:
+  html_document: default
+  pdf_document: default
+date: "2023-10-19"
+---
+
+Week9
+```{r setup, include=TRUE} 
+#Death Penalty in Texas and The Last Words
+
+#I have 2 datasets I'm planning to use, both of which are data from Texas and have offender's last words.
+#1. The offenders and their victim specs. 
+#2. Offender's height and weight.
+```
+
+Week10
+```{r setup, include=TRUE} 
+#Can we better understand the use of death penalty with the condemned persons' last words?
+
+#1. There is a lack of universally accepted moral standards on the death penalty: proponents advocate for its role in upholding moral duty and legal principles, while opponents assert it violates the salinity of life (Pojman & Reiman, 1998). There need to be some other more cultural/case-by-case considerations rather than mere moral high ground.
+#2. The significance of deterrence in cultures with and without the death penalty are very different. Jurisdictions like Southern American state Tennessee employs 'death row' not only to signify the gravity of investigations but also to serve as a deterrent, sometimes without performing actual executions (Wright, 1991). With the visualized presentation on the last words, I believe it will further enhance the deterrence effect of using death penalty and inform the public about the serious crimes.
+#3. Looking at Western data on death penalty is interesting in terms of how in the ideological conflict, they would usually accuse the Eastern culture as 'uncivilized' and 'morally impermissible' that the latter would still execute people (Feng, 2007). This is evidenced in the Disney version(s) of Mulan suggests that women soldiers in ancient China faced death sentences, contradicting historical evidence (Goh, 2021). The current death penalty debate is deeply grounded in Western values and there is expected to have appealing findings at the end of the project as the data mining proceeds.
+
+#In the first data set I will use 'Eye Color',	'Weight' and	'Height' and 'Last Statement' to vividly present the offender's character with variations. In addition, the second dataset's 'Offender Information Link' and 'Last Statement Link' will be incorporated for the viewer to find out more about the offender to inform the viewer the incident once they feel touched reading the last statement. I can merge the two datasets into one using the 'TDCJ Number' and verify the 'Last Name' and	'First Name'. The 'Date Received' and	'Execution Date' can showcase the investigation process and the deterrence effect of death penalty with a plot.
+
+#If time allows, there are also crime and victim information such as 'Previous Crime (0=No, 1=Yes),	Co-defendants,	Number of victim,	White victim,	Hispanic victim,	Black victim,	Victim of other races,	Female victim and	Male victim' to use.
+```
+
+Week11 & 12
+```{r setup, include=TRUE} 
+#Merge datasets
+file1_data <- read.csv("tx_deathrow_full.csv")
+file2_data <- read.csv("Texas Last Statement - CSV.csv")
+
+merged_data <- bind_rows(file1_data, file2_data, .id = "Source") %>%
+  group_by(TDCJNumber) %>%
+  summarize_all(funs(first(na.omit(.)))) %>%
+  ungroup()
+
+#Realized there will be repeated colloums
+merged_data <- merged_data %>%
+  select(-Last.Name, -First.Name, -LastStatement, -Age, -CountyOfConviction, -EducationLevel, -NativeCounty)
+write.csv(merged_data, "merged_data.csv", row.names = FALSE)
+
+#The visualization used are a video iframe and a text display/
+#Shiny and shinyjs can active each respectively, then I use Quatro to hold the app on my website.
+#Apart from the app set up most of the codes are outside learning. We also explored the possibility of using packages that can directly enable drawing in R, but due to its significantly learning curve I used Shiny as a compomized but functional solution.
+```
+
+Week13 - Final Submission
+```{r setup, include=TRUE} 
+#To be, or not to be?
+
+#The discourse surrounding the moral permissibility of the death penalty is a perennial topic, generating impassioned debates on ethical, legal, and philosophical grounds (Pojman and Reiman, 1998). While the arguments often traverse terrain such as human rights, justice, and the efficacy of deterrence, this essay aims to cast a spotlight on a facet frequently overshadowed: the cultural dimension. Ebury (2021) suggested that it is significant to bring emerging cultural issues such as new media into the death penalty discussion, together with the already debated moral doctrines including human rights and forgiveness. The punishment now functions as a potent cultural instrument, conveying diverse societal messages rooted in values and historical narratives. Therefore, adapting the lens of cultural relativism – placing the death penalty into specific cultural contexts - offers a more comprehensive perspective on the punishment’s significance and implications. 
+
+#This led to the selection of a specific dataset, namely the "Texas Death Row Executions Info and Last Words" by Ianmobbs (2017). Given constraints in time and resources, instead of conducting a comprehensive comparative analysis across cultures, I focused on the Texas data. I embarked on an educational discovery journey, drawing inspiration from the storyline of "The Game of Thrones" (Reinhart, 2014). In the realm of death penalty storytelling, few aspects evoke more emotion than the final words of the inmates. Valuable insights can be gleaned from their psychological and behavioral responses, shedding light on the viewers' perspectives on serious crimes. I intentionally omitted detailed information about the criminals, opting instead to subtly guide the viewer to the 'Last.Statement'— a dialogue constructed deep within the living soul and departed spirit.
+
+#The project is titled "The Eyes You'll Shut Forever." However, the question arises: will the user truly close these eyes, or will they choose to contempt the last statements made by the death inmates in favor of forgiveness? The video excerpts selected from the phenomenal HBO series mirror the viewer's internal thoughts. If the viewer aligns with the expectation to 'Close Their Eyes,' the character steps onto the path of hope with her alliance. Conversely, if the viewer consistently 'Condemns Their Body,' the character becomes engulfed in the anger of fire, ultimately leading to her lonely demise.
+
+#This program is designed not only to educate the viewer about the consequences of decision-making but also to encourage them, as the end-of-the-game message indicates, to 'Live On With Hope.' The clever introduction of an active element—choosing eye colors illuminates the weighty topic and subtly invokes the concept of equality. Whether alive or deceased, judging from a moral high ground or bearing the heavy responsibilities of a death inmate, we are all creatures with "Brown eyes, green eyes, and blue eyes." We all share the hope that our eyes will peacefully close at the end of the day. Shouldn't we then treat our neighbors as we would want to be treated ourselves?
+
+#Some may argue that the executed are condemned, and forgiveness should not be extended for the harm they caused in the past (Bae, 2008). While such belief has its point, taking this opportunity to build the program, I would like to suggest putting on a period on the cycle of violence and bickering. They have received their judgement, and we as the new generation of the 21 centre, are to listen to their stories to inform positive future changes. By documenting their last words in a thought-provoking manner, their death, even as condemned bodies, contributes to the greater journey of mankind. 
+```
+References:
+    Bae, S. (2008). Is the death penalty an Asian value? Asian Affairs, 39(1), 47-56.
+Ebury, K. (2021). Modern Cultures of the Death Penalty. Modern Literature and the Death Penalty, 1890-1950, 1-27.
+Ianmobbs. (2017, June 9). Texas death row executions info and last words. Kaggle. https://www.kaggle.com/datasets/ianmobbs/texas-death-row-executions-info-and-last-words 
+Reinhart, M. (2014). Game of thrones: A pop-up guide to Westeros. Insight Editions.
+https://www.kaggle.com/datasets/ianmobbs/texas-death-row-executions-info-and-last-words

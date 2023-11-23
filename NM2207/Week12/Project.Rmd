@@ -1,0 +1,50 @@
+---
+title: "Project"
+output:
+  html_document: default
+  pdf_document: default
+date: "2023-10-19"
+---
+
+Week9
+```{r setup, include=TRUE} 
+#Death Penalty in Texas and The Last Words
+
+#I have 2 datasets I'm planning to use, both of which are data from Texas and have offender's last words.
+#1. The offenders and their victim specs. 
+#2. Offender's height and weight.
+```
+
+Week10
+```{r setup, include=TRUE} 
+#Can we better understand the use of death penalty with the condemned persons' last words?
+
+#1. There is a lack of universally accepted moral standards on the death penalty: proponents advocate for its role in upholding moral duty and legal principles, while opponents assert it violates the salinity of life (Pojman & Reiman, 1998). There need to be some other more cultural/case-by-case considerations rather than mere moral high ground.
+#2. The significance of deterrence in cultures with and without the death penalty are very different. Jurisdictions like Southern American state Tennessee employs 'death row' not only to signify the gravity of investigations but also to serve as a deterrent, sometimes without performing actual executions (Wright, 1991). With the visualized presentation on the last words, I believe it will further enhance the deterrence effect of using death penalty and inform the public about the serious crimes.
+#3. Looking at Western data on death penalty is interesting in terms of how in the ideological conflict, they would usually accuse the Eastern culture as 'uncivilized' and 'morally impermissible' that the latter would still execute people (Feng, 2007). This is evidenced in the Disney version(s) of Mulan suggests that women soldiers in ancient China faced death sentences, contradicting historical evidence (Goh, 2021). The current death penalty debate is deeply grounded in Western values and there is expected to have appealing findings at the end of the project as the data mining proceeds.
+
+#In the first data set I will use 'Eye Color',	'Weight' and	'Height' and 'Last Statement' to vividly present the offender's character with variations. In addition, the second dataset's 'Offender Information Link' and 'Last Statement Link' will be incorporated for the viewer to find out more about the offender to inform the viewer the incident once they feel touched reading the last statement. I can merge the two datasets into one using the 'TDCJ Number' and verify the 'Last Name' and	'First Name'. The 'Date Received' and	'Execution Date' can showcase the investigation process and the deterrence effect of death penalty with a plot.
+
+#If time allows, there are also crime and victim information such as 'Previous Crime (0=No, 1=Yes),	Co-defendants,	Number of victim,	White victim,	Hispanic victim,	Black victim,	Victim of other races,	Female victim and	Male victim' to use.
+```
+
+Week11 & 12
+```{r setup, include=TRUE} 
+#Merge datasets
+file1_data <- read.csv("tx_deathrow_full.csv")
+file2_data <- read.csv("Texas Last Statement - CSV.csv")
+
+merged_data <- bind_rows(file1_data, file2_data, .id = "Source") %>%
+  group_by(TDCJNumber) %>%
+  summarize_all(funs(first(na.omit(.)))) %>%
+  ungroup()
+
+#Realized there will be repeated colloums
+merged_data <- merged_data %>%
+  select(-Last.Name, -First.Name, -LastStatement, -Age, -CountyOfConviction, -EducationLevel, -NativeCounty)
+write.csv(merged_data, "merged_data.csv", row.names = FALSE)
+
+#The visualization used are a video iframe and a text display/
+#Shiny and shinyjs can active each respectively, then I use Quatro to hold the app on my website.
+#Apart from the app set up most of the codes are outside learning. We also explored the possibility of using packages that can directly enable drawing in R, but due to its significantly learning curve I used Shiny as a compomized but functional solution.
+```
