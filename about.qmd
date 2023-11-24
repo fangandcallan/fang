@@ -4,7 +4,46 @@ title: "The Eyes You'll Shut Forever"
 
 They are executed. But are they resting in peace?
 
-html_code <- '<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"></iframe>'
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"></iframe>
+```
+::: popup-note
+Please view the videos before you proceed to action upon the last statements. Once you make the choice, you can get a new statement by selecting a different eye color of the death inmate. Remember, this is YOUR choice as the living to treat the dead.
+:::
 
-cat(html_code)
+```{=html}
+<style>
+.popup-note {
+  position: fixed;
+  top: 10px;  /* Adjust the top distance as needed */
+  right: 10px;  /* Adjust the right distance as needed */
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+  z-index: 999;  /* Ensure the pop-up note is on top of other elements */
+  display: none;  /* Initially hide the pop-up note */
+}
 
+.popup-note.show {
+  display: block;  /* Show the pop-up note when the "show" class is added */
+}
+</style>
+```
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the pop-up note element
+  var popupNote = document.querySelector('.popup-note');
+
+  // Show the pop-up note
+  popupNote.classList.add('show');
+
+  // Set a timeout to hide the pop-up note after a certain duration (e.g., 5000 milliseconds)
+  setTimeout(function () {
+    popupNote.classList.remove('show');
+  }, 5000);  // Adjust the duration as needed
+});
+</script>
+```
