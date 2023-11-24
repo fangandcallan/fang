@@ -2,8 +2,9 @@
 title: "fangandcallan.github.io"
 ---
 
-Hi my name is Zifang. I'm from Chinese Studies. You can view my work this semester on NM2207 by using the nevigation bar.
+Hi my name is Zifang. I'm from Chinese Studies. You can view my work this semester on NM2207 here.
 
-```{=html}
-<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"> </iframe>
-```
+1.  Please check out my creative thoughts - 'The Eyes You'll Shut Forever', a dialog between us and the death inmate, tapping on the character development in the The Game of Thrones, reflecting our internal journey. You can scroll down to avoid the navigation bar from disturbing the experience and get instructions.
+2.  After viewing the project, you will gain access to the github link that contains all the files used in this sem. For the source code, data etc. for the project, you can check them at fangandcallan.github.io in the same link.
+
+Thanks for coming to my site \~

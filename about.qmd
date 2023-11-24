@@ -22,7 +22,7 @@ Please view the videos before you proceed to action upon the last statements. On
   border: 1px solid #ccc;
   border-radius: 5px;
   max-width: 300px;
-  z-index: 999;
+  z-index: 800;
   opacity: 0.5;  /* Initial transparency */
   transition: opacity 0.5s ease;  /* Smooth transition for opacity changes */
 }
