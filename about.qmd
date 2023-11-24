@@ -15,20 +15,20 @@ Please view the videos before you proceed to action upon the last statements. On
 <style>
 .popup-note {
   position: fixed;
-  top: 10px;  /* Adjust the top distance as needed */
-  right: 10px;  /* Adjust the right distance as needed */
+  top: 10px;
+  right: 10px;
   background-color: #f1f1f1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   max-width: 300px;
-  z-index: 999;  /* Ensure the pop-up note is on top of other elements */
-  display: none;  /* Initially hide the pop-up note */
+  z-index: 999;
+  opacity: 0.5;  /* Initial transparency */
+  transition: opacity 0.5s ease;  /* Smooth transition for opacity changes */
 }
 
-.popup-note.show {
-  display: block;  /* Show the pop-up note when the "show" class is added */
-}
+.popup-note:hover {
+  opacity: 1;  /* Full transparency on hover */
 </style>
 ```
 ```{=html}
@@ -37,12 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Get the pop-up note element
   var popupNote = document.querySelector('.popup-note');
 
-  // Show the pop-up note
-  popupNote.classList.add('show');
-
   // Set a timeout to hide the pop-up note after a certain duration (e.g., 5000 milliseconds)
   setTimeout(function () {
-    popupNote.classList.remove('show');
+    popupNote.style.opacity = 0.5;  // Set initial transparency
   }, 5000);  // Adjust the duration as needed
 });
 </script>
