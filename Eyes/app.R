@@ -68,11 +68,11 @@ server <- function(input, output, session) {
     closeEyesCount(closeEyesCount() + 1)
     
     if (closeEyesCount() == 3 | closeEyesCount() == 5) {
-      videoUrlcloseeyes <- switch(
-        closeEyesCount(),
-        "3" = "https://www.youtube.com/embed/ngcgrYjuf5U?autoplay=1",
-        "5" = "https://www.youtube.com/embed/ScGNAsh9DMg?autoplay=1"
-      )
+      if (closeEyesCount() == 3){
+        videoUrlcloseeyes <- "https://www.youtube.com/embed/ngcgrYjuf5U?autoplay=1"
+      } else {
+        videoUrlcloseeyes <- "https://www.youtube.com/embed/ScGNAsh9DMg?autoplay=1"
+      }
       currentVideo(videoUrlcloseeyes)
     }
   })
@@ -81,11 +81,11 @@ server <- function(input, output, session) {
     burnBodyCount(burnBodyCount() + 1)
     
     if (burnBodyCount() == 3 | burnBodyCount() == 5) {
-      videoUrlburnbody <- switch(
-        burnBodyCount(),
-        "3" = "https://www.youtube.com/embed/iBvlNIYJkAo?autoplay=1",
-        "5" = "https://www.youtube.com/embed/RfPudGbjwzTE?autoplay=1"
-      )
+      if (burnBodyCount() == 3){
+        videoUrlburnbody <- "https://www.youtube.com/embed/iBvlNIYJkAo?autoplay=1"
+      } else {
+        videoUrlburnbody <- "https://www.youtube.com/embed/fPudGbjwzTE?autoplay=1"
+      }
       currentVideo(videoUrlburnbody)
     }
   })

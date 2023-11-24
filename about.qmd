@@ -4,4 +4,7 @@ title: "The Eyes You'll Shut Forever"
 
 They are executed. But are they resting in peace?
 
-<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"> </iframe>
+html_code <- '<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"></iframe>'
+
+cat(html_code)
+
