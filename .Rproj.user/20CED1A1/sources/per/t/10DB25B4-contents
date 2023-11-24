@@ -2,8 +2,8 @@
 title: "fangandcallan.github.io"
 ---
 
-Hi my name is Zifang. I'm from Chinese Studies.
+Hi my name is Zifang. I'm from Chinese Studies. You can view my work this semester on NM2207 by using the nevigation bar.
 
-```{r}
-1 + 1
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://fangandcallan.shinyapps.io/Eyes/"> </iframe>
 ```

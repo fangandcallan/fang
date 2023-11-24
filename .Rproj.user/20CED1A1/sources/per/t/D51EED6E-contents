@@ -9,6 +9,7 @@ website:
       - href: https://github.com/fangandcallan/fangandcallan.github.io/tree/aa6b1005fac20f3846115d1b78a7871254956ac5/NM2207
         text: NM2207 Files So Far
       - about.qmd
+        text: A discovery journy with the death inmates
 
 format:
   html:
